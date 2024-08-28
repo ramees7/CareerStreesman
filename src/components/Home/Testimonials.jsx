@@ -12,11 +12,11 @@ export default function Testimonials() {
     "https://www.youtube.com/embed/tygi697AJls?si=IYWI4PlBe9f8AC6G",
   ];
   return (
-    <div className="bg-white px-4 sm:px-6 mt-5 lg:px-8 text-center">
+    <div className=" px-4 sm:px-6 mt-5 lg:px-8 text-center">
       <h2 className="text-3xl leading-9 font-semibold text-[#000080]">
         Real Stories, Incredible Journeys: Listen To Our Stars
       </h2>
-      <p className="mt-4 text-lg leading-6 text-gray-600 max-w-2xl mx-auto">
+      <p className="mt-4 text-lg leading-6 text-black max-w-2xl mx-auto">
         Discover the success stories and journeys of our top learners. Hear from
         those who have thrived with our platform and see how their dedication
         and our resources have paved their way to incredible achievements.

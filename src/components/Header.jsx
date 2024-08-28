@@ -20,7 +20,7 @@ function Navbar() {
   }
 
   return (
-    <nav className=" xl:px-52 lg:px-40 md:px-28 bg-[#eaeff5]">
+    <nav className=" xl:px-52 lg:px-40 md:px-28 bg-[#fff]">
       <div className=" flex flex-wrap items-center justify-between py-4 ">
         <div className="lg:w-40 flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className="h-16" alt="Flowbite Logo" />

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/image/logo.png";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import '../components/Home/Home.css'
 
 export default function Footer() {
   const socialMedia = [
@@ -18,9 +19,9 @@ export default function Footer() {
   return (
     <footer className="pt-12 ">
       <div className="text-center py-6">
-        <h1 className="lg:text-3xl md:text-2xl text-xl font-bold text-[#000080]">
-          {/* CAREER STREESMAN <span className="text-black"> - Crafting Careers, <br /> Enabling Hope</span> */}
-          CAREER STREESMAN - Crafting Careers, <br /> Enabling Hope
+        <h1 className="lg:text-3xl md:text-2xl text-xl font-bold ">
+          <span className="landing-heading">CAREER STREESMAN</span> <span className="text-black"> - Crafting Careers, <br /> Enabling Hope</span>
+          {/* CAREER STREESMAN - Crafting Careers, <br /> Enabling Hope */}
         </h1>
         <h4 className="text-sm md:text-md lg:text-lg mt-3">
           To empower individuals with job training to enhance their careers and

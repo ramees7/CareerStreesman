@@ -48,3 +48,28 @@ export default function Landing() {
           </div>
         </div> */
 }
+
+
+// <div className="flex justify-between items-center">
+//         <div className="w-1/3">
+//           <div className="bg-red-100 text-red-500 w-10 h-10 rounded-full flex items-center justify-center mb-4">01</div>
+//           <h3 className="text-xl font-bold mb-2">Career Counselling</h3>
+//           <p className="text-gray-600">Speak to expert counsellors who will guide you towards the ideal program for your career aspirations</p>
+//         </div>
+
+//         <div className="w-1/3 flex justify-center">
+//           <img src={man} alt="Professional" className="w-64 h-auto" />
+//         </div>
+
+//         <div className="w-1/3 text-right">
+//           <div className="bg-red-100 text-red-500 w-10 h-10 rounded-full flex items-center justify-center mb-4 ml-auto">03</div>
+//           <h3 className="text-xl font-bold mb-2">Flexible Payment Plans</h3>
+//           <p className="text-gray-600">Say goodbye to hefty student loans. Get assistance in finding the best, personalized payment plans</p>
+//         </div>
+//       </div>
+
+//       <div className="mt-8 text-center">
+//         <div className="bg-red-100 text-red-500 w-10 h-10 rounded-full flex items-center justify-center mb-4 mx-auto">02</div>
+//         <h3 className="text-xl font-bold mb-2">University Admission</h3>
+//         <p className="text-gray-600 max-w-md mx-auto">Get expert support every step of the way to ease the stress of the University's admission process</p>
+//       </div>
