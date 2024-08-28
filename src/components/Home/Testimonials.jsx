@@ -1,7 +1,16 @@
 import React from "react";
 import { FaPlayCircle } from "react-icons/fa";
+import TestimonialModal from "./TestimonialModal";
 
 export default function Testimonials() {
+  const centerButton = true;
+  const videoLinks = [
+    "https://www.youtube.com/embed/vUy6HniBQgQ?si=Ee-WJj7qraUVFnmT",
+    "https://www.youtube.com/embed/9T_et7hlaa8?si=XIlUXMPJPEZKx69s",
+    "https://www.youtube.com/embed/tygi697AJls?si=IYWI4PlBe9f8AC6G",
+    "https://www.youtube.com/embed/9T_et7hlaa8?si=XIlUXMPJPEZKx69s",
+    "https://www.youtube.com/embed/tygi697AJls?si=IYWI4PlBe9f8AC6G",
+  ];
   return (
     <div className="bg-white px-4 sm:px-6 mt-5 lg:px-8 text-center">
       <h2 className="text-3xl leading-9 font-semibold text-[#000080]">
@@ -14,20 +23,20 @@ export default function Testimonials() {
       </p>
 
       <div className="relative flex items-center justify-center h-[400px]">
-        <div className="absolute top-[10%] left-1/4 bg-white rounded-full p-4 shadow-md">
-          <FaPlayCircle className="text-2xl text-[#c50101]"/>
+        <div className="absolute top-[10%] left-1/4  rounded-full p-4 shadow-md hover:cursor-pointer">
+          <TestimonialModal video={videoLinks[0]} />
         </div>
-        <div className="absolute top-[10%] right-1/4 rounded-full p-4 shadow-md">
-          <FaPlayCircle className="text-2xl text-[#c50101]"/>
+        <div className="absolute top-[10%] right-1/4 rounded-full p-4 shadow-md  hover:cursor-pointer">
+          <TestimonialModal video={videoLinks[1]} />
         </div>
-        <div className="absolute top-[40%] left-1/2 bg-[#000080] rounded-full p-4 shadow-lg">
-          <FaPlayCircle className="text-3xl text-[#fff]"/>
+        <div className="absolute top-[40%] left-1/2 bg-[#000080] rounded-full p-4 shadow-lg  hover:cursor-pointer">
+          <TestimonialModal video={videoLinks[4]} centerButton={centerButton} />
         </div>
         <div className="absolute bottom-[10%] left-1/4  rounded-full p-4 shadow-md">
-          <FaPlayCircle className="text-2xl text-[#c50101]"/>
+          <TestimonialModal video={videoLinks[2]} />
         </div>
-        <div className="absolute bottom-[10%] right-1/4 bg-white rounded-full p-4 shadow-md">
-          <FaPlayCircle className="text-2xl text-[#c50101]"/>
+        <div className="absolute bottom-[10%] right-1/4  rounded-full p-4 shadow-md  hover:cursor-pointer">
+          <TestimonialModal video={videoLinks[3]} />
         </div>
       </div>
     </div>

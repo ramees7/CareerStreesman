@@ -1,0 +1,10 @@
+:root {
+    --gradient-100-value: linear-gradient(132deg, #000080 14.58%, #c50101 65.1%, #c64b4b);
+}
+.landing-heading{
+    background: var(--gradient-100-value);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text; 
+    color: transparent; 
+}

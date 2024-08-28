@@ -54,12 +54,12 @@ export default function HAbout() {
         </div>
         <div className="flex-1 mt-5 lg:mt-0">
           <div className="space-y-4">
-            {/* <h1 className="text-3xl font-semibold text-[#fff]">
+            <h1 className="text-3xl font-semibold text-[#fff]">
               Seamless Learning Experience
             </h1>
             <p className="text-[#fff]">
               Experience learning by doing with our interactive platform.
-            </p> */}
+            </p>
             <ul className="space-y-5 ">
               <li className="flex items-center text-[#fff] gap-2">
                 <IoMdStarOutline className="text-2xl text-[#fff]" />
