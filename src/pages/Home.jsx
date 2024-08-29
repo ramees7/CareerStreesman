@@ -5,6 +5,8 @@ import HAbout from "../components/Home/HAbout";
 import Testimonials from "../components/Home/Testimonials";
 import HCourses from "../components/Home/HCourses";
 import HTabRouteMap from "../components/Home/HTabRouteMap";
+import Review from "../components/Home/Review";
+import Support from "../components/Home/Support";
 
 export default function Home() {
   return (
@@ -12,8 +14,11 @@ export default function Home() {
       <Landing />
       <HAbout/>
       <Companies/>
-      <Testimonials/>
       <HTabRouteMap/>
+      <Testimonials/>
+      <HCourses/>
+      <Review/>
+      <Support/>
     </div>
   );
 }

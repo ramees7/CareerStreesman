@@ -12,7 +12,7 @@ export default function Testimonials() {
     "https://www.youtube.com/embed/tygi697AJls?si=IYWI4PlBe9f8AC6G",
   ];
   return (
-    <div className=" px-4 sm:px-6 mt-5 lg:px-8 text-center">
+    <div className=" px-4 sm:px-6 pt-5 lg:px-8 text-center">
       <h2 className="text-3xl leading-9 font-semibold text-[#000080]">
         Real Stories, Incredible Journeys: Listen To Our Stars
       </h2>

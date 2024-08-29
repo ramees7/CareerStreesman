@@ -18,8 +18,11 @@ export default function HTabRouteMap() {
   
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* <h2 className="text-3xl leading-9 font-semibold mb-8 text-[#000080] text-center">
+        On The Job Training Programs
+      </h2> */}
       <div className="flex justify-center items-center mb-8">
-        <div className="flex space-x-4">
+        <div className="flex space-x-8">
           {tabTitles.map((title, index) => (
             <button
               key={index}
