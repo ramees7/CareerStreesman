@@ -43,7 +43,7 @@ export default function LayoutRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/placements" element={<Placements />} />
+          {/* <Route path="/placements" element={<Placements />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Home />} />
         </Routes>
