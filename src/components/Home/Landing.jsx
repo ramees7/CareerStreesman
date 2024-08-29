@@ -14,7 +14,6 @@ export default function Landing() {
               Structured coding courses that get you there faster with
               confidence.
             </h5>
-
           </div>
         </div>
       </div>

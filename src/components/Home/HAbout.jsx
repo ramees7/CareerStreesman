@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import video from "../../assets/image/video.mp4";
 import { IoMdStarOutline } from "react-icons/io";
 

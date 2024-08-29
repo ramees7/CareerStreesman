@@ -24,12 +24,6 @@ function Navbar() {
       <div className=" flex flex-wrap items-center justify-between py-4 ">
         <div className="lg:w-40 flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className="h-16" alt="Flowbite Logo" />
-          {/* <div>
-            <h3 className="lg:text-xl font-bold">
-              Career <br />
-              Streesman{" "}
-            </h3>
-          </div> */}
         </div>
         <button
           data-collapse-toggle="navbar-default"

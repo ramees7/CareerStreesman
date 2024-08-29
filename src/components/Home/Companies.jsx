@@ -1,4 +1,3 @@
-// src/components/Companies.js
 export default function Companies() {
   const allCompany = [
     {

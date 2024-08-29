@@ -8,7 +8,7 @@ import Courses from "../pages/Courses";
 import Contact from "../pages/Contact";
 
 export default function LayoutRoutes() {
-  const [showHeaderNav, setShowHeaderNav] = useState(true); // State to control visibility
+  const [showHeaderNav, setShowHeaderNav] = useState(true); 
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
 
   useEffect(() => {
@@ -16,14 +16,11 @@ export default function LayoutRoutes() {
       const currentScrollPos = window.pageYOffset;
 
       if (prevScrollPos > currentScrollPos) {
-        // User is scrolling up
         setShowHeaderNav(true);
       } else {
-        // User is scrolling down
         setShowHeaderNav(false);
       }
 
-      // Update the previous scroll position
       setPrevScrollPos(currentScrollPos);
     };
 
@@ -46,7 +43,7 @@ export default function LayoutRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
-          {/* <Route path="/placements" element={<Placements />} /> */}
+          <Route path="/placements" element={<Placements />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Home />} />
         </Routes>

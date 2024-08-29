@@ -48,12 +48,6 @@ export default function Footer() {
             <div className="w-full sm:w-auto text-center sm:text-left mb-4  ">
               <div className="flex items-center justify-center sm:justify-start">
                 <img src={logo} alt="Logo" className="h-16 w-full mr-2" />
-                {/* <div>
-                  <h3 className="lg:text-xl font-bold">
-                    Career <br />
-                    Streesman{" "}
-                  </h3>
-                </div> */}
               </div>
               <p className="text-sm mt-2 text-center">All rights reserved</p>
             </div>

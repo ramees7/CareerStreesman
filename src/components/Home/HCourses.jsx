@@ -5,8 +5,6 @@ import pythonIcon from "../../assets/image/python.png";
 import flutterIcon from "../../assets/image/flutter.png";
 import javaIcon from "../../assets/image/java.png";
 import arVrIcon from "../../assets/image/vr-icon.png";
-import datascienceIcon from "../../assets/image/data-science.png";
-// import cyberSecurityIcon from "../../assets/image/cyber-security.png";
 import digitalMarketIcon from "../../assets/image/Dm.png";
 import dataAnalystIcon from "../../assets/image/DA.png";
 import uiUxIcon from "../../assets/image/ui_ux.png";
@@ -41,21 +39,11 @@ export default function HCourses() {
       icon: reactIcon,
       link: "https://www.python.org/",
     },
-    // {
-    //   name: "Cyber Security",
-    //   icon: cyberSecurityIcon,
-    //   link: "https://www.python.org/",
-    // },
     {
       name: "AR / VR Development",
       icon: arVrIcon,
       link: "https://www.python.org/",
     },
-    // {
-    //   name: "Data Science",
-    //   icon: datascienceIcon,
-    //   link: "https://www.python.org/",
-    // },
   ];
 
   const nonItCourses = [
