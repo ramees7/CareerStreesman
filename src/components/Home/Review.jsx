@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+import shihas from '../../assets/image/shihas-review.png'
+import shibil from '../../assets/image/shibil-review.png'
 
 export default function Review() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,28 +11,18 @@ export default function Review() {
 
   const reviews = [
     {
-      image:
-        "https://static.vecteezy.com/system/resources/thumbnails/041/714/266/small_2x/ai-generated-professional-man-in-suit-with-arms-crossed-on-transparent-background-stock-png.png",
+      image:shihas,
       content:
         "“My flutter internship was an incredible learning experience. I had the opportunity to work on real-world mobile app development projects using Flutter framework. The mentorship provided by the senior developer was invaluable, and gained a deep understanding of flutter’s architecture and best practices. This internship has significantly enhanced my skills in building cross-platform mobile applications”",
       name: "Muhammed Shihas",
       role: "Flutter Student",
     },
     {
-      image:
-        "https://w7.pngwing.com/pngs/59/89/png-transparent-life-insurance-professional-service-business-men-miscellaneous-company-service-thumbnail.png",
+      image:shibil,
       content:
-        "“My flutter internship was an incredible learning experience. I had the opportunity to work on real-world mobile app development projects using Flutter framework. The mentorship provided by the senior developer was invaluable, and gained a deep understanding of flutter’s architecture and best practices. This internship has significantly enhanced my skills in building cross-platform mobile applications”",
-      name: "Muhammed Shihas",
-      role: "Flutter Student",
-    },
-    {
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrsMC13I0XaI8vSQnZUIAIHLlVmDtxoB6OYQ&s",
-      content:
-        "“My flutter internship was an incredible learning experience. I had the opportunity to work on real-world mobile app development projects using Flutter framework. The mentorship provided by the senior developer was invaluable, and gained a deep understanding of flutter’s architecture and best practices. This internship has significantly enhanced my skills in building cross-platform mobile applications”",
-      name: "Muhammed Shihas",
-      role: "Flutter Student",
+        "“The digital marketing internship exceeded my expectations. Doctosmart edtech has a well-structured program that exposed me to various aspects of online marketing, including SEO, SMM, Content Creation, Digital marketing tools etc. I appreciated the opportunity to collaborate with a talented team and contribute to campaign strategies. The internship not only enhanced knowledge but also provided me with practical experience that will benefit me in my future career.”",
+      name: "Shibil",
+      role: "Digital Marketing Student",
     },
   ];
 

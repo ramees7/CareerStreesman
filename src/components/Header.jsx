@@ -20,15 +20,15 @@ function Navbar() {
   }
 
   return (
-    <nav className=" xl:px-52 lg:px-40 md:px-28 bg-[#fff]">
-      <div className=" flex flex-wrap items-center justify-between py-4 ">
+    <nav className=" xl:px-52 lg:px-40 md:px-28 px-4 bg-[#fff]">
+      <div className={` flex ${isMenuOpen?"flex-wrap":""} items-center justify-between py-4 `}>
         <div className="lg:w-40 flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logo} className="h-16" alt="Flowbite Logo" />
+          <img src={logo} className="h-16" alt="logo" />
         </div>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 px-3 h-10 justify-end text-sm  rounded-lg md:hidden "
+          className="inline-flex items-center  h-10 justify-end text-sm  rounded-lg md:hidden "
           style={{ width: "60%" }}
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen ? "true" : "false"}

@@ -10,7 +10,7 @@ import Support from "../components/Home/Support";
 
 export default function Home() {
   return (
-    <div>
+    <div className=" xl:px-52 lg:px-40 md:px-28 px-5 bg-[#eaeff5]">
       <Landing />
       <HAbout/>
       <Companies/>

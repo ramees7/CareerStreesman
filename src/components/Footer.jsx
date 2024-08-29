@@ -19,9 +19,8 @@ export default function Footer() {
   return (
     <footer className="pt-12 ">
       <div className="text-center py-6">
-        <h1 className="lg:text-3xl md:text-2xl text-xl font-bold ">
-          <span className="landing-heading">CAREER STREESMAN</span> <span className="text-black"> - Crafting Careers, <br /> Enabling Hope</span>
-          {/* CAREER STREESMAN - Crafting Careers, <br /> Enabling Hope */}
+        <h1 className="lg:text-3xl md:text-2xl text-xl font-bold landing-heading">
+          CAREER STREESMAN - Crafting Careers, <br /> Enabling Hope
         </h1>
         <h4 className="text-sm md:text-md lg:text-lg mt-3">
           To empower individuals with job training to enhance their careers and
@@ -47,7 +46,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-evenly items-center">
             <div className="w-full sm:w-auto text-center sm:text-left mb-4  ">
               <div className="flex items-center justify-center sm:justify-start">
-                <img src={logo} alt="Logo" className="h-16 w-full mr-2" />
+                <img src={logo} alt="Logo" className="h-16 md:w-full mr-2" />
               </div>
               <p className="text-sm mt-2 text-center">All rights reserved</p>
             </div>

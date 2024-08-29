@@ -38,7 +38,7 @@ export default function LayoutRoutes() {
       >
         <Header />
       </div>
-      <div className=" xl:px-52 lg:px-40 md:px-28 px-5 bg-[#eaeff5]">
+      {/* <div className=" xl:px-52 lg:px-40 md:px-28 px-5 bg-[#eaeff5]"> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -47,7 +47,7 @@ export default function LayoutRoutes() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Home />} />
         </Routes>
-      </div>
+      {/* </div> */}
       <Footer />
     </BrowserRouter>
   );
