@@ -48,7 +48,7 @@ export default function AllCourses() {
     },
     {
       icon: reactIcon,
-      title: "MERN Stack",
+      title: "MERN Full Stack",
       topics: [
         "MongoDB",
         "Express JS",

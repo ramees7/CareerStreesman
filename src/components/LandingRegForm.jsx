@@ -192,15 +192,23 @@ export default function LandingRegForm() {
                       name="course"
                       value={formData.course}
                       onChange={handleChange}
-                      className="border px-3 text-sm rounded-lg w-full h-12"
+                      className="border px-3 text-sm rounded-lg w-full h-12 "
                     >
                       <option value="" disabled>
                         Choose an option
                       </option>
-                      <option value="java">Java</option>
-                      <option value="mern">MERN</option>
-                      <option value="python">Python</option>
-                      <option value="flutter">Flutter</option>
+                      <option value="Java Full Stack">Java Full Stack</option>
+                      <option value="Python Full Stack">Python Full Stack</option>
+                      <option value="MERN Full Stack">MERN Full Stack</option>
+                      <option value="Flutter App Development">Flutter</option>
+                      <option value="AR /VR Development">AR /VR Development</option>
+                      <option value="Data Science">FlutteData Sciencer</option>
+                      <option value="Cyber Security">Cyber Security</option>
+                      <option value="Digital Marketing">Digital Marketing</option>
+                      <option value="Human Resource Management">Human Resource Management</option>
+                      <option value="Graphic Designing">Graphic Designing</option>
+                      <option value="UI / UX Designer">UI / UX Designer</option>
+                      <option value="Data Analysts">Data Analysts</option>
                       <option value="Not decided yet">Other</option>
                     </select>
                   </div>
