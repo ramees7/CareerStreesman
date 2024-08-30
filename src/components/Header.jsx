@@ -11,20 +11,26 @@ function Navbar() {
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Courses", link: "/courses" },
-    { name: "Placements", link: "/placements" },
+    { name: "Hire Us", link: "/careers" },
     { name: "Contact", link: "/contact" },
   ];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  }
+  };
 
   return (
     <nav className=" xl:px-52 lg:px-40 md:px-28 px-4 bg-[#fff]">
-      <div className={` flex ${isMenuOpen?"flex-wrap":""} items-center justify-between py-4 `}>
-        <div className="lg:w-40 flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logo} className="h-16" alt="logo" />
-        </div>
+      <div
+        className={` flex ${
+          isMenuOpen ? "flex-wrap" : ""
+        } items-center justify-between py-4 `}
+      >
+        <Link to={'/'}>
+          <div className="lg:w-40 flex items-center space-x-3 rtl:space-x-reverse">
+            <img src={logo} className="h-16" alt="logo" />
+          </div>
+        </Link>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -32,7 +38,7 @@ function Navbar() {
           style={{ width: "60%" }}
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen ? "true" : "false"}
-          onClick={toggleMenu} 
+          onClick={toggleMenu}
         >
           <span className="transition-transform duration-1000 ease-in-out">
             {!isMenuOpen ? (
@@ -64,7 +70,9 @@ function Navbar() {
             {naviList?.map((item) => (
               <li
                 className={`text-lg  hover:text-[#000080] ${
-                  location.pathname == item.link ? "text-[#000080]" : "text-black"
+                  location.pathname == item.link
+                    ? "text-[#000080]"
+                    : "text-black"
                 } `}
                 key={item.name}
               >

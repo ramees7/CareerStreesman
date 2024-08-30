@@ -73,10 +73,10 @@ export default function Footer() {
                 <div>
                   <h6 className="text-lg font-semibold mb-2">Legal</h6>
                   <ul className="text-black">
-                    <li>Terms and Conditions</li>
-                    <li>Privacy Policy</li>
-                    <li>Cookie Policy</li>
-                    <li>Copyright Policy</li>
+                    <li><Link to={'/termsofservice'}>Terms and Conditions</Link></li>
+                    <li><Link to={'/privacypolicy'}>Privacy Policy</Link></li>
+                    <li><Link to={'/cookiepolicy'}>Cookie Policy</Link></li>
+                    <li><Link to={'/copyrightpolicy'}>Copyright Policy</Link></li>
                   </ul>
                 </div>
                 <div>

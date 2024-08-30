@@ -77,7 +77,7 @@ export default function AnimatingContent() {
         <h1
           ref={refs.first}
           data-name="first"
-          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out ${
+          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-300${
             isVisible.first ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
@@ -86,7 +86,7 @@ export default function AnimatingContent() {
         <h1
           ref={refs.second}
           data-name="second"
-          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-200 ${
+          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-500 ${
             isVisible.second ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
@@ -95,7 +95,7 @@ export default function AnimatingContent() {
         <h1
           ref={refs.third}
           data-name="third"
-          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-400 ${
+          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-1000 ${
             isVisible.third ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
@@ -107,7 +107,7 @@ export default function AnimatingContent() {
         <span
           ref={refs.fourth}
           data-name="fourth"
-          className={`transition-all duration-1000 ease-out delay-600 ${
+          className={`transition-all duration-1000 ease-out delay-300 ${
             isVisible.fourth ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
@@ -116,7 +116,7 @@ export default function AnimatingContent() {
         <h1
           ref={refs.fifth}
           data-name="fifth"
-          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-800 ${
+          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-700 ${
             isVisible.fifth ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
@@ -137,7 +137,7 @@ export default function AnimatingContent() {
         <span
           ref={refs.seven}
           data-name="seven"
-          className={`transition-all duration-1000 ease-out delay-600 ${
+          className={`transition-all duration-1000 ease-out delay-300 ${
             isVisible.seven ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
@@ -146,7 +146,7 @@ export default function AnimatingContent() {
         <h1
           ref={refs.eight}
           data-name="eight"
-          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-800 ${
+          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-500 ${
             isVisible.eight ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
@@ -167,7 +167,7 @@ export default function AnimatingContent() {
         <span
           ref={refs.ten}
           data-name="ten"
-          className={`transition-all duration-1000 ease-out delay-600 ${
+          className={`transition-all duration-1000 ease-out delay-300 ${
             isVisible.ten ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
@@ -176,7 +176,7 @@ export default function AnimatingContent() {
         <h1
           ref={refs.eleven}
           data-name="eleven"
-          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-800 ${
+          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-500 ${
             isVisible.eleven ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
