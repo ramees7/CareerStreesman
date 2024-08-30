@@ -22,9 +22,7 @@ function Navbar() {
   return (
     <nav className=" xl:px-52 lg:px-40 md:px-28 px-4 bg-[#fff]">
       <div
-        className={` flex ${
-          isMenuOpen ? "flex-wrap" : ""
-        } items-center justify-between py-4 `}
+        className={` flex flex-wrap md:flex-nowrap items-center justify-between py-4 `}
       >
         <Link to={'/'}>
           <div className="lg:w-40 flex items-center space-x-3 rtl:space-x-reverse">
@@ -35,7 +33,7 @@ function Navbar() {
           data-collapse-toggle="navbar-default"
           type="button"
           className="inline-flex items-center  h-10 justify-end text-sm  rounded-lg md:hidden "
-          style={{ width: "60%" }}
+          // style={{ width: "60%" }}
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen ? "true" : "false"}
           onClick={toggleMenu}
@@ -63,7 +61,7 @@ function Navbar() {
           </span>
         </button>
         <div
-          className={` md:block  ${isMenuOpen ? "block" : "hidden"}`}
+          className={` md:block  ${isMenuOpen ? "block w-full" : "hidden"}`}
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 lg:justify-end md:justify-end rounded-lg md:flex-row md:space-x-3 lg:space-x-7 rtl:space-x-reverse md:mt-0 md:border-0 ">
