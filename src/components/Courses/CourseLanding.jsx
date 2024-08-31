@@ -10,7 +10,7 @@ export default function CourseLanding() {
             backgroundSize: "cover",
             height: "400px",
             backgroundAttachment: "fixed",
-          }}
+          }} 
           className="flex relative items-center justify-center"
         >
           <div className="absolute inset-0 bg-[#000080] opacity-50 z-0"></div>
