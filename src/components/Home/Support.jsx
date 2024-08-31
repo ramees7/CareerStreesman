@@ -15,11 +15,11 @@ export default function Support() {
           </h5>
         </div>
         <div className="flex justify-center w-full mt-5">
-          <Link to={"/courses"}>
+          <a href="tel:+0321456987" target="_blank">
             <button className="py-2 px-6 border-0 bg-[#000080] text-white text-xl  flex items-center gap-3">
               <FaPhoneAlt/> Talk To A Career Expert
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

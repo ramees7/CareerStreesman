@@ -7,14 +7,30 @@ import { Link } from "react-router-dom";
 import logo from "../assets/image/logo.png";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import '../components/Home/Home.css'
+import "../components/Home/Home.css";
 
 export default function Footer() {
   const socialMedia = [
-    { name: "Instagram", icon: <IoLogoInstagram />, link: "https://www.instagram.com/careersteersman?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
-    { name: "LinkedIn", icon: <FaLinkedin />, link: "https://www.linkedin.com/company/career-steersman/" },
-    { name: "Facebook", icon: <FaFacebook />, link: "https://www.facebook.com/Doctosmartedtech" },
-    { name: "Youtube", icon: <FaYoutube />, link: "https://www.youtube.com/channel/UClKms_p7ZUbfzs6C805TFcg" },
+    {
+      name: "Instagram",
+      icon: <IoLogoInstagram />,
+      link: "https://www.instagram.com/careersteersman?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    },
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/company/career-steersman/",
+    },
+    {
+      name: "Facebook",
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/Doctosmartedtech",
+    },
+    {
+      name: "Youtube",
+      icon: <FaYoutube />,
+      link: "https://www.youtube.com/channel/UClKms_p7ZUbfzs6C805TFcg",
+    },
   ];
   return (
     <footer className="pt-12 ">
@@ -56,37 +72,57 @@ export default function Footer() {
                 <div>
                   <h6 className="text-lg font-semibold mb-2">Explore</h6>
                   <ul className="text-black">
-                    <li><Link to={'/courses'}>Full Stack Development</Link></li>
-                    <li><Link to={'/careers'}>Hire from us</Link></li>
-                    <li><Link to={'/book-demo'}>Book Free Demo</Link></li>
+                    <li>
+                      <Link to={"/courses"}>Full Stack Development</Link>
+                    </li>
+                    <li>
+                      <Link to={"/careers"}>Hire from us</Link>
+                    </li>
+                    <li>
+                      <Link to={"/book-demo"}>Book Free Demo</Link>
+                    </li>
                     {/* <li>Blog</li> */}
                   </ul>
                 </div>
                 <div>
                   <h6 className="text-lg font-semibold mb-2">Company</h6>
                   <ul className="text-black">
-                    <li><Link to={'/about'}>About us</Link></li>
-                    <li><Link to={'/contact'}>Contact us</Link></li>
+                    <li>
+                      <Link to={"/about"}>About us</Link>
+                    </li>
+                    <li>
+                      <Link to={"/contact"}>Contact us</Link>
+                    </li>
                     <li className="text-[#000080] font-semibold">
-                      <Link to={'/careers'}>We're hiring!</Link>
+                      <Link to={"/careers"}>We're hiring!</Link>
                     </li>
                   </ul>
                 </div>
                 <div>
                   <h6 className="text-lg font-semibold mb-2">Legal</h6>
                   <ul className="text-black">
-                    <li><Link to={'/termsofservice'}>Terms and Conditions</Link></li>
-                    <li><Link to={'/privacypolicy'}>Privacy Policy</Link></li>
-                    <li><Link to={'/cookiepolicy'}>Cookie Policy</Link></li>
-                    <li><Link to={'/copyrightpolicy'}>Copyright Policy</Link></li>
+                    <li>
+                      <Link to={"/termsofservice"}>Terms and Conditions</Link>
+                    </li>
+                    <li>
+                      <Link to={"/privacypolicy"}>Privacy Policy</Link>
+                    </li>
+                    <li>
+                      <Link to={"/cookiepolicy"}>Cookie Policy</Link>
+                    </li>
+                    <li>
+                      <Link to={"/copyrightpolicy"}>Copyright Policy</Link>
+                    </li>
                   </ul>
                 </div>
                 <div>
                   <h6 className="text-lg font-semibold mb-2">Follow Us</h6>
                   <ul className="text-black">
                     {socialMedia?.map((item) => (
-                      <li key={item.link} >
-                        <Link to={`${item.link}`} target="_blank">{item.name}</Link>
+                      <li key={item.link}>
+                        <Link to={`${item.link}`} target="_blank">
+                          {item.name}
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -108,8 +144,11 @@ export default function Footer() {
         <div className="flex gap-1 items-center font-bold text-lg">
           <IoIosMail />
           <h1>Email :</h1>
-          <a href="tel:0987654321" target="_blank" className="text-[#000080]">
-            {" "}
+          <a
+            href="mailto:doctosmartacademy@gmail.com"
+            target="_blank"
+            className="text-[#000080]"
+          >
             doctosmartacademy@gmail.com
           </a>
         </div>

@@ -15,9 +15,11 @@ export default function HiringLanding() {
           Our comprehensive hiring solution with a high conversion rate,
           offering efficient recruitment services—all at no cost to you
         </h3>
-        <button className="py-2 px-4 bg-[#c50101] text-white rounded flex gap-3 items-center">
-          <FaPhoneVolume /> Lets Talk!
-        </button>
+        <a href="tel:+0321456987" target="_blank">
+          <button className="py-2 px-4 bg-[#c50101] text-white rounded flex gap-3 items-center">
+            <FaPhoneVolume /> Lets Talk!
+          </button>
+        </a>
       </div>
       <div className="text-center py-16 md:pt-32 flex justify-center items-center flex-col gap-y-4 px-3">
         <h1 className="text-3xl lg:text-5xl md:text-4xl font-bold ">

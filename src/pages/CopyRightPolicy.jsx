@@ -21,7 +21,7 @@ export default function CopyRightPolicy() {
           <strong>Effective Date:</strong> 01-January-2024
         </p>
         <p className="mb-4">
-          Kodnest Technologies Pvt. Ltd. (“Kodnest,” “we,” “our,” or “us”)
+          Carees Streesman Technologies Pvt. Ltd. (“Carees Streesman,” “we,” “our,” or “us”)
           respects the intellectual property rights of others and expects our
           users to do the same. This Copyright Policy explains how we handle
           copyright infringement claims and outlines the steps for copyright
@@ -34,7 +34,7 @@ export default function CopyRightPolicy() {
         <p className="mb-4">
           All content and materials available on our website and services,
           including but not limited to text, graphics, website name, code,
-          images, and logos, are the intellectual property of Kodnest
+          images, and logos, are the intellectual property of Carees Streesman
           Technologies Pvt. Ltd. and are protected by applicable copyright,
           trademark, and other intellectual property laws. Unauthorized use of
           any content is strictly prohibited.
@@ -46,7 +46,7 @@ export default function CopyRightPolicy() {
         <p className="mb-4">
           Users may submit content, including but not limited to reviews,
           comments, and other materials (“User-Generated Content”). By
-          submitting User-Generated Content, you grant Kodnest a non-exclusive,
+          submitting User-Generated Content, you grant Carees Streesman a non-exclusive,
           royalty-free, worldwide, perpetual license to use, reproduce, modify,
           adapt, publish, translate, create derivative works from, distribute,
           and display such content in any media.
@@ -165,7 +165,7 @@ export default function CopyRightPolicy() {
           6. Termination Policy
         </h2>
         <p className="mb-4">
-          Kodnest reserves the right to terminate access to our services for
+          Carees Streesman reserves the right to terminate access to our services for
           users who are repeat infringers of intellectual property rights.
         </p>
 

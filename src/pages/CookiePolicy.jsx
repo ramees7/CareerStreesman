@@ -22,7 +22,7 @@ export default function CookiePolicy() {
           <strong>Effective Date:</strong> 01-January-2024
         </p>
         <p className="mb-4">
-          Welcome to Kodnest Technologies Pvt. Ltd. (“Kodnest,” “we,” “our,” or
+          Welcome to Carees Streesman Technologies Pvt. Ltd. (“Carees Streesman,” “we,” “our,” or
           “us”). By accessing or using our website and services, you agree to
           comply with and be bound by the following terms and conditions
           (“Terms”).
@@ -40,7 +40,7 @@ export default function CookiePolicy() {
           2. Services Provided
         </h2>
         <p className="mb-4">
-          Kodnest offers educational courses in both online and offline modes.
+          Carees Streesman offers educational courses in both online and offline modes.
           Our services are designed to provide high-quality education and
           training in various subjects.
         </p>
@@ -49,7 +49,7 @@ export default function CookiePolicy() {
         <p className="mb-4">
           We collect personal details such as your name, email, phone number,
           and other relevant information. This information is used to provide
-          you access to our courses and the Kodnest app.
+          you access to our courses and the Carees Streesman app.
         </p>
 
         <h2 className="text-lg font-semibold mt-6 mb-2">
@@ -62,16 +62,16 @@ export default function CookiePolicy() {
             Communicate important updates and information regarding our
             services.
           </li>
-          <li>Enhance your learning experience through the Kodnest app.</li>
+          <li>Enhance your learning experience through the Carees Streesman app.</li>
         </ul>
 
         <h2 className="text-lg font-semibold mt-6 mb-2">
           5. Payment and Refund Policy
         </h2>
-        <p className="mb-4">Kodnest's payment and refund policy includes:</p>
+        <p className="mb-4">Carees Streesman's payment and refund policy includes:</p>
         <ul className="ps-7 list-disc list-inside mb-4">
           <li>
-            <span className="font-semibold">No Refunds:</span> Kodnest does not
+            <span className="font-semibold">No Refunds:</span> Carees Streesman does not
             offer refunds for any courses purchased.
           </li>
           <li>
@@ -91,16 +91,16 @@ export default function CookiePolicy() {
         <h2 className="text-lg font-semibold mt-6 mb-2">
           6. Intellectual Property
         </h2>
-        <p className="mb-4">Kodnest's intellectual property terms include:</p>
+        <p className="mb-4">Carees Streesman's intellectual property terms include:</p>
         <ul className="ps-7 list-disc list-inside mb-4">
           <li>
-            <span className="font-semibold">Trademarks:</span> “Kodnest” is a
-            registered trademark of Kodnest Technologies Pvt. Ltd. You may not
+            <span className="font-semibold">Trademarks:</span> “Carees Streesman” is a
+            registered trademark of Carees Streesman Technologies Pvt. Ltd. You may not
             use our trademark without prior written permission.
           </li>
           <li>
             <span className="font-semibold">Content:</span> All content provided
-            on our platform is owned by Kodnest or its licensors and is
+            on our platform is owned by Carees Streesman or its licensors and is
             protected by intellectual property laws. You may not reproduce,
             distribute, or create derivative works from our content without
             authorization.
@@ -135,7 +135,7 @@ export default function CookiePolicy() {
           9. Liability and Disclaimers
         </h2>
         <p className="mb-4">
-          Kodnest is not liable for any indirect, incidental, or consequential
+          Carees Streesman is not liable for any indirect, incidental, or consequential
           damages arising out of your use of our services. Our services are
           provided on an “as is” and “as available” basis.
         </p>
@@ -144,7 +144,7 @@ export default function CookiePolicy() {
           10. Modification of Terms
         </h2>
         <p className="mb-4">
-          Kodnest reserves the right to update or modify these Terms at any
+          Carees Streesman reserves the right to update or modify these Terms at any
           time. Any changes will be effective immediately upon posting on our
           website. Your continued use of our services after any modifications
           indicates your acceptance of the new Terms.
