@@ -62,6 +62,7 @@ export default function LandingRegForm() {
       });
 
       if (response.ok) {
+        localStorage.setItem("Registered", "Yes");
         message.success("Message sent successfully!");
         setFormData({ name: "", email: "", number: "", course: "" });
         setShowForm(false);
@@ -75,11 +76,13 @@ export default function LandingRegForm() {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowForm(true);
-    }, 10000);
+    if (localStorage.getItem("Registered") !== "Yes") {
+      const timer = setTimeout(() => {
+        setShowForm(true);
+      }, 10000);
 
-    return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
@@ -198,15 +201,25 @@ export default function LandingRegForm() {
                         Choose an option
                       </option>
                       <option value="Java Full Stack">Java Full Stack</option>
-                      <option value="Python Full Stack">Python Full Stack</option>
+                      <option value="Python Full Stack">
+                        Python Full Stack
+                      </option>
                       <option value="MERN Full Stack">MERN Full Stack</option>
                       <option value="Flutter App Development">Flutter</option>
-                      <option value="AR /VR Development">AR /VR Development</option>
+                      <option value="AR /VR Development">
+                        AR /VR Development
+                      </option>
                       <option value="Data Science">FlutteData Sciencer</option>
                       <option value="Cyber Security">Cyber Security</option>
-                      <option value="Digital Marketing">Digital Marketing</option>
-                      <option value="Human Resource Management">Human Resource Management</option>
-                      <option value="Graphic Designing">Graphic Designing</option>
+                      <option value="Digital Marketing">
+                        Digital Marketing
+                      </option>
+                      <option value="Human Resource Management">
+                        Human Resource Management
+                      </option>
+                      <option value="Graphic Designing">
+                        Graphic Designing
+                      </option>
                       <option value="UI / UX Designer">UI / UX Designer</option>
                       <option value="Data Analysts">Data Analysts</option>
                       <option value="Not decided yet">Other</option>

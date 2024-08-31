@@ -84,7 +84,7 @@ export default function Footer() {
                   <h6 className="text-lg font-semibold mb-2">Follow Us</h6>
                   <ul className="text-black">
                     {socialMedia?.map((item) => (
-                      <li>
+                      <li key={item.link} >
                         <Link to={`${item.link}`} target="_blank">{item.name}</Link>
                       </li>
                     ))}

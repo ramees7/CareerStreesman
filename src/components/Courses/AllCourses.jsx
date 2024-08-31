@@ -29,7 +29,7 @@ export default function AllCourses() {
         "SQL",
         "Projects",
       ],
-      link: "//",
+      link: "java-full-stack",
     },
     {
       icon: pythonIcon,
@@ -44,7 +44,7 @@ export default function AllCourses() {
         "MySQL",
         "Projects",
       ],
-      link: "//",
+      link: "python-full-stack",
     },
     {
       icon: reactIcon,
@@ -59,67 +59,67 @@ export default function AllCourses() {
         "MVC Architecture",
         "Projects",
       ],
-      link: "//",
+      link: "mern-full-stack",
     },
     {
       icon: flutterIcon,
       title: "Flutter App Development",
       topics: [
-        "Core Java and Java 8",
-        "J2EE",
-        "Spring",
-        "Microservices",
-        "Front End Technologies",
-        "React JS",
-        "SQL",
+        "Dart Programming",
+        "Flutter Framework",
+        "State Management",
+        "Responsive Design",
+        "Flutter Widgets",
+        "Firebase Integration",
+        "Publishing Apps",
         "Projects",
       ],
-      link: "//",
+      link: "flutter-app-development",
     },
     {
       icon: arVrIcon,
       title: "AR /VR Development",
       topics: [
-        "Core Python",
-        "Advance Python",
-        "Django",
-        "Rest API",
-        "Front End Technologies",
-        "React JS",
-        "MySQL",
+        "Unity 3D",
+        "C# Programming",
+        "AR Foundation",
+        "VR Foundation",
+        "3D Modeling",
+        "Spatial Audio",
+        "Publishing AR/VR Apps",
         "Projects",
       ],
-      link: "//",
+      link: "ar-vr-development",
     },
     {
       icon: dataScienceIcon,
       title: "Data Science",
       topics: [
-        "MongoDB",
-        "Express JS",
-        "React JS",
-        "Node JS",
-        "HTML, CSS, and JavaScript",
-        "Git & GitHub, and Mongoose",
-        "MVC Architecture",
+        "Python for Data Science",
+        "Data Visualization",
+        "Statistics for Data Science",
+        "Machine Learning",
+        "Deep Learning",
+        "Big Data Technologies",
+        "Data Science Projects",
         "Projects",
       ],
-      link: "//",
+      link: "data-science",
     },
     {
       icon: cyberSecurityIcon,
       title: "Cyber Security",
       topics: [
-        "MongoDB",
-        "Express JS",
-        "React JS",
-        "Node JS",
-        "HTML, CSS, and JavaScript",
-        "Git & GitHub, and Mongoose",
-        "MVC Architecture",
+        "Network Security",
+        "Ethical Hacking",
+        "Cryptography",
+        "Malware Analysis",
+        "Incident Response",
+        "Penetration Testing",
+        "Cyber Security Tools",
         "Projects",
       ],
-      link: "//",
+      link: "cyber-security",
     },
   ];
 
@@ -133,63 +133,74 @@ export default function AllCourses() {
         "Content Marketing",
         "Social Media Marketing",
         "Analytics and Tracking",
-        "Social Media Management",
+        "Email Marketing",
+        "Influencer Marketing",
+        "Projects",
       ],
-      link: "//",
+      link: "digital-marketing",
     },
     {
       icon: hrIcon,
       title: "Human Resource Management",
       topics: [
-        "Digital Recruiting",
-        "Social Media Recruiting",
-        "Remote Work",
-        "Freelancing and Contract Work",
-        "Digital Marketing Skills Training",
-        "Digital Tools Proficiency",
+        "Recruitment and Selection",
+        "Employee Relations",
+        "Performance Management",
+        "Compensation and Benefits",
+        "Training and Development",
+        "HR Analytics",
+        "Organizational Behavior",
+        "Projects",
       ],
-      link: "//",
+      link: "human-resource-management",
     },
     {
       icon: graphicDesigningIcon,
       title: "Graphic Designing",
       topics: [
-        "Digital Recruiting",
-        "Social Media Recruiting",
-        "Remote Work",
-        "Freelancing and Contract Work",
-        "Digital Marketing Skills Training",
-        "Digital Tools Proficiency",
+        "Design Principles",
+        "Typography",
+        "Color Theory",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Brand Identity Design",
+        "Layout and Composition",
+        "Projects",
       ],
-      link: "//",
+      link: "graphic-designing",
     },
     {
       icon: uiUxIcon,
       title: "UI / UX Designer",
       topics: [
-        "Digital Recruiting",
-        "Social Media Recruiting",
-        "Remote Work",
-        "Freelancing and Contract Work",
-        "Digital Marketing Skills Training",
-        "Digital Tools Proficiency",
+        "User Research",
+        "Wireframing",
+        "Prototyping",
+        "Interaction Design",
+        "Usability Testing",
+        "Adobe XD / Figma",
+        "User Interface Design",
+        "Projects",
       ],
-      link: "//",
+      link: "ui-ux-designer",
     },
     {
       icon: dataAnalystIcon,
       title: "Data Analysts",
       topics: [
-        "Digital Recruiting",
-        "Social Media Recruiting",
-        "Remote Work",
-        "Freelancing and Contract Work",
-        "Digital Marketing Skills Training",
-        "Digital Tools Proficiency",
+        "Data Cleaning",
+        "Data Visualization",
+        "Statistical Analysis",
+        "Excel for Data Analysis",
+        "SQL for Data Management",
+        "Python for Data Analysis",
+        "Dashboard Development",
+        "Projects",
       ],
-      link: "//",
+      link: "data-analysts",
     },
   ];
+  
 
   return (
     <div className="py-16">
@@ -198,7 +209,9 @@ export default function AllCourses() {
           On The Job Training
         </h2> */}
         <div>
-          <h2 className="text-3xl leading-9 font-semibold mb-8 text-[#000080] text-center">IT</h2>
+          <h2 className="text-3xl leading-9 font-semibold mb-8 text-[#000080] text-center">
+            IT
+          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
             {itCourses.map((course, index) => (
               <div
@@ -232,7 +245,9 @@ export default function AllCourses() {
         </div>
         {/* non it */}
         <div className="py-16">
-          <h2 className="text-3xl leading-9 font-semibold mb-8 text-[#c50101] text-center">Non-IT</h2>
+          <h2 className="text-3xl leading-9 font-semibold mb-8 text-[#c50101] text-center">
+            Non-IT
+          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
             {nonItCourses.map((course, index) => (
               <div
@@ -255,7 +270,7 @@ export default function AllCourses() {
                     </li>
                   ))}
                 </ul>
-                <Link to={`${course.link}`} className="mx-auto">
+                <Link to={`/courses/${course.link}`} className="mx-auto">
                   <button className="bg-[#000080] text-white py-2 px-4 rounded ">
                     Read More
                   </button>

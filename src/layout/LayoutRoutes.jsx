@@ -12,6 +12,7 @@ import PrivacyPolicy from "../pages/PrivacyPolicy";
 import CookiePolicy from "../pages/CookiePolicy";
 import CopyRightPolicy from "../pages/CopyRightPolicy";
 import Hiring from "../pages/Hiring";
+import CourseOverview from "../pages/CourseOverview";
 
 export default function LayoutRoutes() {
   const [showHeaderNav, setShowHeaderNav] = useState(true); 
@@ -35,7 +36,56 @@ export default function LayoutRoutes() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
-
+  const courseNames=[
+    {
+      name:"Java Full Stack",
+      url:"java-full-stack"
+    },
+    {
+      name:"Python Full Stack",
+      url:"python-full-stack"
+    },
+    {
+      name:"MERN Full Stack",
+      url:"mern-full-stack"
+    },
+    {
+      name:"Flutter App Development",
+      url:"flutter-app-development"
+    },
+    {
+      name:"AR /VR Development",
+      url:"ar-vr-development"
+    },
+    {
+      name:"Data Science",
+      url:"data-science"
+    },
+    {
+      name:"Cyber Security",
+      url:"cyber-security"
+    },
+    {
+      name:"Digital Marketing",
+      url:"digital-marketing"
+    },
+    {
+      name:"Human Resource Management",
+      url:"human-resource-management"
+    },
+    {
+      name:"Graphic Designing",
+      url:"graphic-designing"
+    },
+    {
+      name:"UI / UX Designer",
+      url:"ui-ux-designer"
+    },
+    {
+      name:"Data Analysts",
+      url:"data-analysts"
+    },
+  ]
 
   return (
     <BrowserRouter>
@@ -52,6 +102,11 @@ export default function LayoutRoutes() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/careers" element={<Hiring />} />
+        {
+          courseNames?.map((item)=>(
+            <Route path={`courses/${item.url}`} key={item.name} element={<CourseOverview />} />
+          ))
+        }
         <Route path="/termsofservice" element={<TermsOfService />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/cookiepolicy" element={<CookiePolicy />} />
