@@ -9,7 +9,7 @@ export default function CourseHeading({ courseDetails }) {
           <h2 className="text-4xl leading-9 font-semibold text-[#000080] text-center">
             {courseDetails.name}
           </h2>
-          <div className="md:w-[70%]">
+          <div className="lg:w-[70%]">
             <h3 className="text-lg">{courseDetails.contentExplain}</h3>
           </div>
           <button className="py-2 px-4 bg-[#000080] text-white ">

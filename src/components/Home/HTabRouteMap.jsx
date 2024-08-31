@@ -2,20 +2,21 @@ import React, { useState } from "react";
 import man from "../../assets/image/man.png";
 import { FaCheck } from "react-icons/fa6";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function HTabRouteMap() {
-    const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(0);
 
-    const tabTitles = [
-      "Enrolment Assistance",
-      "Career Counselling",
-      "University Admission",
-    ];
-  
-    const handleTabClick = (index) => {
-      setActiveTab(index);
-    };
-  
+  const tabTitles = [
+    "Enrolment Assistance",
+    "Career Counselling",
+    "University Admission",
+  ];
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
       {/* <h2 className="text-3xl leading-9 font-semibold mb-8 text-[#000080] text-center">
@@ -226,10 +227,12 @@ export default function HTabRouteMap() {
         </button>
       </div>
       <div className="text-center mt-12">
-        <button className="py-2 px-6 border-0 bg-[#000080] text-white text-xl border-b-[5px] border-r-[5px] ">
-          Book a Free Counseling Session
-        </button>
+        <Link to={"/book-demo"}>
+          <button className="py-2 px-6 border-0 bg-[#000080] text-white text-xl border-b-[5px] border-r-[5px] ">
+            Book a Free Counseling Session
+          </button>
+        </Link>
       </div>
     </div>
-  )
+  );
 }

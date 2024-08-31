@@ -13,6 +13,7 @@ import CookiePolicy from "../pages/CookiePolicy";
 import CopyRightPolicy from "../pages/CopyRightPolicy";
 import Hiring from "../pages/Hiring";
 import CourseOverview from "../pages/CourseOverview";
+import BookDemo from "../pages/BookDemo";
 
 export default function LayoutRoutes() {
   const [showHeaderNav, setShowHeaderNav] = useState(true); 
@@ -107,6 +108,7 @@ export default function LayoutRoutes() {
             <Route path={`courses/${item.url}`} key={item.name} element={<CourseOverview />} />
           ))
         }
+        <Route path="/book-demo" element={<BookDemo />} />
         <Route path="/termsofservice" element={<TermsOfService />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/cookiepolicy" element={<CookiePolicy />} />

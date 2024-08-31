@@ -58,6 +58,7 @@ export default function Footer() {
                   <ul className="text-black">
                     <li><Link to={'/courses'}>Full Stack Development</Link></li>
                     <li><Link to={'/careers'}>Hire from us</Link></li>
+                    <li><Link to={'/book-demo'}>Book Free Demo</Link></li>
                     {/* <li>Blog</li> */}
                   </ul>
                 </div>

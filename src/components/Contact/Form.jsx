@@ -1,3 +1,4 @@
+import { message } from "antd";
 import React, { useState } from "react";
 
 export default function Form() {
@@ -8,6 +9,18 @@ export default function Form() {
     message: "",
   });
 
+  const [errors, setErrors] = useState({});
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhoneNumber = (number) => {
+    const phoneRegex = /^\d{10}$/; // Accepts 10 digit phone numbers
+    return phoneRegex.test(number);
+  };
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -17,9 +30,25 @@ export default function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const newErrors = {};
+
+    // Validate email
+    if (!validateEmail(formData.email)) {
+      newErrors.email = "Please enter a valid email address.";
+    }
+
+    // Validate phone number
+    if (!validatePhoneNumber(formData.number)) {
+      newErrors.number = "Please enter a valid 10-digit phone number.";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
 
     try {
-      const response = await fetch("http://localhost:5000/send", {
+      const response = await fetch("http://localhost:5000/message", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -27,7 +56,8 @@ export default function Form() {
 
       if (response.ok) {
         message.success("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" ,number:"" });
+        setFormData({ name: "", email: "", message: "", number: "" });
+        setErrors({});
       } else {
         message.error("Failed to send message. Please try again.");
       }
@@ -36,80 +66,87 @@ export default function Form() {
       message.error("Failed to send message. Please try again.");
     }
   };
+
   return (
-    <div className="py-16 ">
+    <div className="py-16">
       <div className="bg-white py-16 shadow-lg rounded-md">
-        <h1 className="font-bold text-4xl text-center mb-7 text-[#000080]">CONTACT US</h1>
-        <form class="max-w-md mx-auto" onSubmit={handleSubmit}>
-          <div class="relative z-0 w-full mb-6 group">
+        <h1 className="font-bold text-4xl text-center mb-7 text-[#000080]">
+          CONTACT US
+        </h1>
+        <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
+          <div className="relative z-0 w-full mb-6 group">
             <input
               type="text"
               name="name"
               id="name"
-              class="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#000080] focus:outline-none focus:ring-0 focus:border-[#000080] peer"
+              className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#000080] focus:outline-none focus:ring-0 focus:border-[#000080] peer"
               placeholder=" "
               value={formData.name}
               onChange={handleChange}
               required
             />
             <label
-              for="name"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#000080] peer-focus:dark:text-[#000080] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              htmlFor="name"
+              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-[#000080] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Name
             </label>
           </div>
-          <div class="relative z-0 w-full mb-6 group">
+          <div className="relative z-0 w-full mb-6 group">
             <input
               type="email"
               name="email"
               id="email"
-              class="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#000080] focus:outline-none focus:ring-0 focus:border-[#000080] peer"
+              className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#000080] focus:outline-none focus:ring-0 focus:border-[#000080] peer"
               placeholder=""
               value={formData.email}
               onChange={handleChange}
               required
             />
             <label
-              for="email"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#000080] peer-focus:dark:text-[#000080] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              htmlFor="email"
+              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-[#000080] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Email address
             </label>
+            {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
-          <div class="relative z-0 w-full mb-6 group">
+          <div className="relative z-0 w-full mb-6 group">
             <input
               type="number"
               name="number"
               id="number"
-              class="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#000080] focus:outline-none focus:ring-0 focus:border-[#000080] peer"
+              className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#000080] focus:outline-none focus:ring-0 focus:border-[#000080] peer"
               placeholder=""
               value={formData.number}
               onChange={handleChange}
               required
             />
             <label
-              for="number"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#000080] peer-focus:dark:text-[#000080] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              htmlFor="number"
+              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-[#000080] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Phone Number
             </label>
+            {errors.number && <p className="text-red-500 text-sm">{errors.number}</p>}
           </div>
-          <label for="message" class="block mb-2 text-sm font-medium">
+          <label htmlFor="message" className="block mb-2 text-sm font-medium">
             Your message
           </label>
           <textarea
             id="message"
             rows="4"
-            class="block p-2.5 w-full text-s rounded-lg border border-black focus:ring-[#000080] focus:border-[#000080]  dark:text-white dark:focus:ring-[#000080] dark:focus:border-[#000080]"
+            name="message"
+            className="block p-2.5 w-full text-sm rounded-lg border border-black focus:ring-[#000080] focus:border-[#000080] dark:text-black dark:focus:ring-[#000080] dark:focus:border-[#000080]"
             placeholder="Leave a comment..."
             value={formData.message}
             onChange={handleChange}
+            required
           ></textarea>
           <div className="w-full justify-center">
             <button
               type="submit"
-              class="text-white bg-[#000080] w-full  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm  px-5 py-2.5 text-center mt-5 "
+              className="text-white bg-[#000080] w-full focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-5"
             >
               Send Now
             </button>

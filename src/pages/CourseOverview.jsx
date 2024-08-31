@@ -18,9 +18,12 @@ import pythonIcon from "../assets/image/python.png";
 import vsCodeIcon from "../assets/image/vscode.png";
 import DetailBox from "../components/CourseOverview/DetailBox";
 import Highlights from "../components/CourseOverview/Highlights";
+import FAQ from "../components/CourseOverview/FAQ";
 
 export default function CourseOverview() {
   const location = useLocation();
+
+  const syllabusDetail = true;
 
   const courseDetails = [
     {
@@ -47,26 +50,26 @@ export default function CourseOverview() {
         "Guaranteed 100+ drive opportunities",
         "World class infrastructure",
       ],
-      languages: [javaIcon, htmlIcon, jsIcon, cssIcon, sqlIcon],
-      tools: [eclipseIcon, gitHubIcon, gitIcon],
+      languages: [
+        { img: javaIcon, name: "Java" },
+        { img: htmlIcon, name: "HTML" },
+        { img: jsIcon, name: "JavaScript" },
+        { img: cssIcon, name: "CSS" },
+        { img: sqlIcon, name: "SQL" },
+      ],
+      tools: [
+        { img: eclipseIcon, name: "Eclipse" },
+        { img: gitHubIcon, name: "GitHub" },
+        { img: gitIcon, name: "Git" },
+      ],
       syllabusExplain:
         "The curriculum of this program is designed to aid students in learning to gain knowledge through practical projects that make use of popular technologies such as Java, Java Script, Bootstrap, HTML, CSS and many more. Join the ranks of emerging full stack developers that use their expertise to discover the most effective patterns.",
       hoursTraining: "400+",
       liveProjectCount: "5",
-      courseTopics: [
-        "Core Java and Java 8",
-        "J2EE",
-        "Spring",
-        "Microservices",
-        "Front End Technologies",
-        "React JS",
-        "SQL",
-        "Projects",
-      ],
       faq: [
         {
           question: "Why Should I learn Java from Career Streesman?",
-          asnwer: [
+          answer: [
             "Career Streesman offers java training by instructor who comes with 14+ years experience hands-on Training",
             "100+ Satisfied Students",
             "Certification",
@@ -76,16 +79,17 @@ export default function CourseOverview() {
         },
         {
           question: " What if I miss a class?",
-          asnwer:
+          answer: [
             "You will get recorded sessions in our LMS where you can learn anywhere and anytime.",
+          ],
         },
         {
           question: "How can I register for free Demo?",
-          asnwer: "You can register at https://careerstreesman/contact.",
+          answer: ["You can register at https://careerstreesman/contact."], // Corrected
         },
         {
           question: "Why choose us for a java Training ?",
-          asnwer: [
+          answer: [
             "Industry experts will be your trainers",
             "5 Start Rating",
             "100% Placement Assistance",
@@ -95,7 +99,7 @@ export default function CourseOverview() {
         },
         {
           question: "Why Should I Choose Career Streesman?",
-          asnwer: [
+          answer: [
             "Most experienced professionals as trainers.",
             "Continuous tracking of the needs of different industries and prepares the trainees for the upcoming trends in markets and technologies",
             "Enables the aspirants be prepared for the future interviews and tests.",
@@ -130,23 +134,23 @@ export default function CourseOverview() {
         "Guaranteed 100+ placement opportunities",
         "State-of-the-art infrastructure",
       ],
-      languages: [pythonIcon, htmlIcon, jsIcon, cssIcon, sqlIcon],
-      tools: [vsCodeIcon, gitHubIcon, gitIcon],
+      languages: [
+        { img: pythonIcon, name: "Python" },
+        { img: htmlIcon, name: "HTML" },
+        { img: jsIcon, name: "JavaScript" },
+        { img: cssIcon, name: "CSS" },
+        { img: sqlIcon, name: "SQL" },
+      ],
+      tools: [
+        { img: vsCodeIcon, name: "VS Code" },
+        { img: gitHubIcon, name: "GitHub" },
+        { img: gitIcon, name: "Git" },
+      ],
       syllabusExplain:
         "The curriculum of this program is designed to help students gain practical experience through projects that utilize popular technologies like Python, JavaScript, Bootstrap, HTML, CSS, and more. Join the ranks of emerging full stack developers using their skills to solve complex problems and build robust applications.",
       hoursTraining: "350+",
       liveProjectCount: "4",
-      courseTopics: [
-        "Python Fundamentals",
-        "Object-Oriented Programming",
-        "Django Framework",
-        "Flask Framework",
-        "REST APIs",
-        "Front End Technologies",
-        "React JS",
-        "SQL",
-        "Capstone Projects",
-      ],
+
       faq: [
         {
           question: "Why should I learn Python from Career Streesman?",
@@ -160,12 +164,13 @@ export default function CourseOverview() {
         },
         {
           question: "What if I miss a class?",
-          answer:
+          answer: [
             "You will get recorded sessions in our Learning Management System (LMS), which you can access anytime and anywhere.",
+          ],
         },
         {
           question: "How can I register for a free demo?",
-          answer: "You can register at https://careerstreesman/contact.",
+          answer: ["You can register at https://careerstreesman/contact."],
         },
         {
           question: "Why choose us for Python training?",
@@ -275,6 +280,21 @@ export default function CourseOverview() {
                 </div>
                 <div className="xl:px-52 lg:px-40 md:px-28 px-5 py-16 bg-[#eaeff5]">
                   <Highlights courseDetails={item} />
+                </div>
+                <div
+                  className="xl:px-52 lg:px-40 md:px-28 px-5 py-16"
+                  style={{
+                    background:
+                      "linear-gradient(94deg, rgba(0,0,128,1) 0%, rgba(197,1,1,1) 100%)",
+                  }}
+                >
+                  <DetailBox
+                    courseDetails={item}
+                    syllabusDetail={syllabusDetail}
+                  />
+                </div>
+                <div className="xl:px-52 lg:px-40 md:px-28 px-5 py-16 bg-[#eaeff5]">
+                  <FAQ courseDetails={item} />
                 </div>
               </div>
             )
