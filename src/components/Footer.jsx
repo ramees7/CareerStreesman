@@ -11,10 +11,10 @@ import '../components/Home/Home.css'
 
 export default function Footer() {
   const socialMedia = [
-    { name: "Instagram", icon: <IoLogoInstagram />, link: "https://" },
-    { name: "LinkedIn", icon: <FaLinkedin />, link: "https://" },
-    { name: "Facebook", icon: <FaFacebook />, link: "https://" },
-    { name: "Youtube", icon: <FaYoutube />, link: "https://" },
+    { name: "Instagram", icon: <IoLogoInstagram />, link: "https://www.instagram.com/careersteersman?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+    { name: "LinkedIn", icon: <FaLinkedin />, link: "https://www.linkedin.com/company/career-steersman/" },
+    { name: "Facebook", icon: <FaFacebook />, link: "https://www.facebook.com/Doctosmartedtech" },
+    { name: "Youtube", icon: <FaYoutube />, link: "https://www.youtube.com/channel/UClKms_p7ZUbfzs6C805TFcg" },
   ];
   return (
     <footer className="pt-12 ">
@@ -34,6 +34,7 @@ export default function Footer() {
               to={`${item.link}`}
               key={item.name}
               title={item.name}
+              target="_blank"
               className="lg:text-6xl md:text-4xl text-3xl text-[#000080]"
             >
               {item.icon}
@@ -55,18 +56,18 @@ export default function Footer() {
                 <div>
                   <h6 className="text-lg font-semibold mb-2">Explore</h6>
                   <ul className="text-black">
-                    <li>Full Stack Development</li>
-                    <li>Hire from us</li>
-                    <li>Blog</li>
+                    <li><Link to={'/courses'}>Full Stack Development</Link></li>
+                    <li><Link to={'/careers'}>Hire from us</Link></li>
+                    {/* <li>Blog</li> */}
                   </ul>
                 </div>
                 <div>
                   <h6 className="text-lg font-semibold mb-2">Company</h6>
                   <ul className="text-black">
-                    <li>About us</li>
-                    <li>Contact us</li>
+                    <li><Link to={'/about'}>About us</Link></li>
+                    <li><Link to={'/contact'}>Contact us</Link></li>
                     <li className="text-[#000080] font-semibold">
-                      We're hiring!
+                      <Link to={'/careers'}>We're hiring!</Link>
                     </li>
                   </ul>
                 </div>
@@ -84,7 +85,7 @@ export default function Footer() {
                   <ul className="text-black">
                     {socialMedia?.map((item) => (
                       <li>
-                        <Link to={`${item.link}`}>{item.name}</Link>
+                        <Link to={`${item.link}`} target="_blank">{item.name}</Link>
                       </li>
                     ))}
                   </ul>

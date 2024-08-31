@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HiringLanding from "../components/Hiring/HiringLanding";
 import Benefits from "../components/Hiring/Benefits";
 import Talent from "../components/Hiring/Talent";
 
 export default function Hiring() {
+  const handleToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(()=>{
+    handleToTop()
+  },[])
   return (
     <div className="">
       <div className=" xl:px-52 lg:px-40 md:px-28 px-5 bg-[#eaeff5] py-20">

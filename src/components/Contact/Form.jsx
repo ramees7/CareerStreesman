@@ -38,7 +38,7 @@ export default function Form() {
   };
   return (
     <div className="py-16 ">
-      <div className="bg-white py-16 shadow-lg">
+      <div className="bg-white py-16 shadow-lg rounded-md">
         <h1 className="font-bold text-4xl text-center mb-7 text-[#000080]">CONTACT US</h1>
         <form class="max-w-md mx-auto" onSubmit={handleSubmit}>
           <div class="relative z-0 w-full mb-6 group">
