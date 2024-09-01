@@ -22,27 +22,27 @@ export default function HCourses() {
     {
       name: "Python Django Full Stack Development",
       icon: pythonIcon,
-      link: "https://www.python.org/",
+      link: "python-full-stack",
     },
     {
       name: "Java Full Stack Development",
       icon: javaIcon,
-      link: "https://www.python.org/",
+      link: "java-full-stack",
     },
     {
       name: "Flutter App Development",
       icon: flutterIcon,
-      link: "https://www.python.org/",
+      link: "flutter-app-development",
     },
     {
       name: "MERN Full Stack Development",
       icon: reactIcon,
-      link: "https://www.python.org/",
+      link: "mern-full-stack",
     },
     {
       name: "AR / VR Development",
       icon: arVrIcon,
-      link: "https://www.python.org/",
+      link: "ar-vr-development",
     },
   ];
 
@@ -50,27 +50,27 @@ export default function HCourses() {
     {
       name: "Digital Marketing",
       icon: digitalMarketIcon,
-      link: "https://www.python.org/",
+      link: "digital-marketing",
     },
     {
       name: "Human Resources",
       icon: hrIcon,
-      link: "https://www.python.org/",
+      link: "human-resource-management",
     },
     {
       name: "UI & UX",
       icon: uiUxIcon,
-      link: "https://www.python.org/",
+      link: "ui-ux-designer",
     },
     {
       name: "Graphic Designing",
       icon: graphicDesigningIcon,
-      link: "https://www.python.org/",
+      link: "graphic-designing",
     },
     {
       name: "Data Analystics",
       icon: dataAnalystIcon,
-      link: "https://www.python.org/",
+      link: "data-analysts",
     },
   ];
 
@@ -115,7 +115,7 @@ export default function HCourses() {
           <>
             <div className="flex justify-between flex-wrap gap-x-20 gap-y-6">
               {itCourses?.map((item, index) => (
-                <Link to={`${item.link}`} key={item.name} className="">
+                <Link to={`/courses/${item.link}`} key={item.name} className="">
                   <div
                     className={`flex justify-center items-center flex-col w-[150px] h-[150px] text-[#000080] transition-transform transform hover:scale-125 hover:text-[#c50101] duration-300 ${
                       index % 2 === 1 ? "mt-20" : "mt-0"

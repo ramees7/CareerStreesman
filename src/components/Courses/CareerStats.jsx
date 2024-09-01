@@ -54,20 +54,20 @@ export default function CareerStats() {
           data-aos="fade-left"
         >
           <div className="py-2">
-            <h1>321+</h1>
-            <h3>HIRING PARTNERS</h3>
+            <h1>72%</h1>
+            <h3>AVG. SALARY HIKE</h3>
           </div>
           <div className="py-2">
-            <h1>200+</h1>
-            <h3>OPPORTUNITIES EVERY MONTH</h3>
+            <h1>3LPA - 12LPA</h1>
+            <h3>AVG. SALARY</h3>
           </div>
           <div className="py-2">
-            <h1>12+</h1>
-            <h3>DRIVES EVERY DAY</h3>
+            <h1>100%</h1>
+            <h3>PLACEMENT ASSISTANCE</h3>
           </div>
           <div className="py-2">
-            <h1>50+</h1>
-            <h3>AVG. STUDENTS PLACED EVERY MONTH</h3>
+            <h1>1000+</h1>
+            <h3>JOB SOURCED</h3>
           </div>
         </div>
       </div>

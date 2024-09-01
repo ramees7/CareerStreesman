@@ -72,10 +72,10 @@ export default function Highlights({ courseDetails }) {
               <h1 className="text-center text-2xl leading-9 font-semibold text-[#c50101]">
                 Tools Covered
               </h1>
-              <div className="grid grid-cols-9 gap-3 py-5">
+              <div className="grid grid-cols-12 gap-3 py-5">
                 {courseDetails.tools.map((tools) => (
                   <div
-                    className="col-span-3 flex items-center justify-center"
+                    className="col-span-3 flex items-center justify-center "
                     key={tools.name}
                   >
                     <img
