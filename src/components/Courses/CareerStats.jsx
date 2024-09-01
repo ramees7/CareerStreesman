@@ -44,7 +44,7 @@ export default function CareerStats() {
             <img
               src={logo}
               alt="logo"
-              className="w-[40%] mx-auto bg-white p-4 rounded"
+              className="md:w-[100px] w-[80px] mx-auto bg-white p-4 rounded"
             />
           </div>
         </div>

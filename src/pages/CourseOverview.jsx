@@ -5,6 +5,8 @@ import javaBgImg from "../assets/image/java-bg.jpg";
 import pythonBgImg from "../assets/image/python-bg.jpg";
 import mernBgImg from "../assets/image/mern-bg.jpg";
 import flutterBgImg from "../assets/image/flutter-bg.jpg";
+import arVrBgImg from "../assets/image/ar-vr-bg.jpg";
+import dataScienceBgImg from "../assets/image/ds-bg.jpg";
 import CourseHeading from "../components/CourseOverview/CourseHeading";
 import htmlIcon from "../assets/image/html-icon.png";
 import cssIcon from "../assets/image/css-icon.png";
@@ -370,7 +372,7 @@ export default function CourseOverview() {
     {
       name: "AR / VR Development",
       url: "/courses/ar-vr-development",
-      // bgImg: javaBgImg,
+      bgImg: arVrBgImg,
       contentExplain:
         "The AR/VR Development course offers a deep dive into creating immersive experiences using Augmented Reality (AR) and Virtual Reality (VR) technologies. This course covers the fundamentals of AR/VR development, including tools, frameworks, and best practices, enabling you to build innovative applications for various platforms.",
       duration: "250+ Hours",
@@ -452,7 +454,7 @@ export default function CourseOverview() {
     {
       name: "Data Science",
       url: "/courses/data-science",
-      // bgImg: dataScienceBgImg,
+      bgImg: dataScienceBgImg,
       contentExplain:
         "The Data Science course is designed to provide you with a comprehensive understanding of data analysis, statistical methods, and machine learning. This course covers everything from data wrangling to advanced analytics techniques, equipping you with the skills to make data-driven decisions and solve complex problems using data.",
       duration: "300+ Hours",

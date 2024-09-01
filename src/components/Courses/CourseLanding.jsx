@@ -15,7 +15,7 @@ export default function CourseLanding() {
         >
           <div className="absolute inset-0 bg-[#000080] opacity-50 z-0"></div>
 
-          <h1 className="text-6xl font-bold text-white z-10">On The Job Training</h1>
+          <h1 className="text-6xl font-bold text-white z-10 text-center">On The Job Training</h1>
         </div>
       </div>
     </div>
