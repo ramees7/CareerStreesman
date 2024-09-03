@@ -11,6 +11,8 @@ import cyberSecurityBgImg from "../assets/image/cybersecurity-bg.jpg";
 import digitalMarketingBgImg from "../assets/image/DM-bg.jpg";
 import hrManagementBgImg from "../assets/image/hr-bg.jpg";
 import graphicDesigningBgImg from "../assets/image/graphicdesigning-bg.jpg";
+import dataAnalystsBgImg from "../assets/image/DA-bg.jpg";
+import uiUxDesignerBgImg from "../assets/image/ui_ux-bg.jpg";
 import CourseHeading from "../components/CourseOverview/CourseHeading";
 import htmlIcon from "../assets/image/html-icon.png";
 import cssIcon from "../assets/image/css-icon.png";
@@ -869,7 +871,7 @@ export default function CourseOverview() {
     {
       name: "UI / UX Designer",
       url: "/courses/ui-ux-designer",
-      // bgImg: uiUxDesignerBgImg,
+      bgImg: uiUxDesignerBgImg,
       contentExplain:
         "The UI/UX Designer course is designed to provide a deep understanding of user interface and user experience design principles. Learn how to create intuitive, user-friendly designs for web and mobile applications by mastering design thinking, wireframing, prototyping, and usability testing.",
       duration: "220+ Hours",
@@ -950,7 +952,7 @@ export default function CourseOverview() {
     {
       name: "Data Analysts",
       url: "/courses/data-analysts",
-      // bgImg: dataAnalystsBgImg,
+      bgImg: dataAnalystsBgImg,
       contentExplain:
         "The Data Analysts course is designed to provide a thorough understanding of data analysis techniques and tools. Learn how to collect, process, and analyze data to make informed business decisions. Gain skills in statistical analysis, data visualization, and using data analysis software to derive actionable insights.",
       duration: "220+ Hours",
