@@ -7,6 +7,10 @@ import mernBgImg from "../assets/image/mern-bg.jpg";
 import flutterBgImg from "../assets/image/flutter-bg.jpg";
 import arVrBgImg from "../assets/image/ar-vr-bg.jpg";
 import dataScienceBgImg from "../assets/image/ds-bg.jpg";
+import cyberSecurityBgImg from "../assets/image/cybersecurity-bg.jpg";
+import digitalMarketingBgImg from "../assets/image/DM-bg.jpg";
+import hrManagementBgImg from "../assets/image/hr-bg.jpg";
+import graphicDesigningBgImg from "../assets/image/graphicdesigning-bg.jpg";
 import CourseHeading from "../components/CourseOverview/CourseHeading";
 import htmlIcon from "../assets/image/html-icon.png";
 import cssIcon from "../assets/image/css-icon.png";
@@ -536,7 +540,7 @@ export default function CourseOverview() {
     {
       name: "Cyber Security",
       url: "/courses/cyber-security",
-      // bgImg: cyberSecurityBgImg,
+      bgImg: cyberSecurityBgImg,
       contentExplain:
         "The Cyber Security course is designed to provide a comprehensive understanding of the principles and practices necessary to protect systems and data from cyber threats. You will learn about security protocols, threat analysis, and defensive techniques to safeguard networks and information from cyber attacks.",
       duration: "250+ Hours",
@@ -617,7 +621,7 @@ export default function CourseOverview() {
     {
       name: "Digital Marketing",
       url: "/courses/digital-marketing",
-      // bgImg: digitalMarketingBgImg,
+      bgImg: digitalMarketingBgImg,
       contentExplain:
         "The Digital Marketing course is designed to provide a thorough understanding of online marketing strategies and tools. Learn how to create and implement effective digital marketing campaigns, optimize your online presence, and analyze performance metrics to drive business growth.",
       duration: "200+ Hours",
@@ -700,7 +704,7 @@ export default function CourseOverview() {
     {
       name: "Human Resource Management",
       url: "/courses/human-resource-management",
-      // bgImg: hrManagementBgImg,
+      bgImg: hrManagementBgImg,
       contentExplain:
         "The Human Resource Management course is designed to provide a comprehensive understanding of HR practices and principles. Learn how to effectively manage employee relations, recruitment, performance, and compliance to support organizational goals and foster a positive workplace environment.",
       duration: "180+ Hours",
@@ -782,7 +786,7 @@ export default function CourseOverview() {
     {
       name: "Graphic Designing",
       url: "/courses/graphic-designing",
-      // bgImg: graphicDesigningBgImg,
+      bgImg: graphicDesigningBgImg,
       contentExplain:
         "The Graphic Designing course is crafted to equip you with the skills necessary to create visually compelling designs for various media. Learn the fundamentals of design principles, typography, color theory, and software tools to bring your creative ideas to life and make a mark in the design industry.",
       duration: "200+ Hours",

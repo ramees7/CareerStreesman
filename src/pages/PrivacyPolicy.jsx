@@ -144,7 +144,7 @@ export default function PrivacyPolicy() {
           Policy periodically for any changes.
         </p>
         <h2 className="text-lg font-semibold mt-6 mb-2">
-          11. Contact Information
+          7. Contact Information
         </h2>
         <p className="mb-4">
           If you have any questions or concerns about these Terms, please

@@ -116,7 +116,7 @@ export default function AnimatingContent() {
         <h1
           ref={refs.fifth}
           data-name="fifth"
-          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-700 ${
+          className={`mt-6 text-3xl transform transition-all duration-1000 ease-out delay-500 ${
             isVisible.fifth ? "text-6xl opacity-100" : "opacity-0 scale-90"
           }`}
         >
