@@ -30,6 +30,42 @@ import npmIcon from "../assets/image/npm-icon.png";
 import dartIcon from "../assets/image/dart-icon.png";
 import firebaseIcon from "../assets/image/firebase-icon.png";
 import flutterIcon from "../assets/image/flutter.png";
+import cSharpIcon from "../assets/image/cSharpIcon.png";
+import cPlusPlusIcon from "../assets/image/cPlusPlusIcon.png";
+import unityIcon from "../assets/image/unityIcon.png";
+import unrealEngineIcon from "../assets/image/unrealEngineIcon.png";
+import blenderIcon from "../assets/image/blenderIcon.png";
+import mayaIcon from "../assets/image/mayaIcon.png";
+import jupyterIcon from "../assets/image/jupyterIcon.png";
+import tableauIcon from "../assets/image/tableauIcon.png";
+import powerBiIcon from "../assets/image/powerBiIcon.png";
+import bashIcon from "../assets/image/bashIcon.png";
+import kaliLinuxIcon from "../assets/image/kaliLinuxIcon.png";
+import wiresharkIcon from "../assets/image/wiresharkIcon.png";
+import metasploitIcon from "../assets/image/metasploitIcon.png";
+import nessusIcon from "../assets/image/nessusIcon.png";
+import googleAnalyticsIcon from "../assets/image/googleAnalyticsIcon.png";
+import facebookAdsIcon from "../assets/image/facebookAdsIcon.png";
+import googleAdsIcon from "../assets/image/googleAdsIcon.png";
+import semrushIcon from "../assets/image/semrushIcon.png";
+import ahrefsIcon from "../assets/image/ahrefsIcon.png";
+import mailchimpIcon from "../assets/image/mailchimpIcon.png";
+import hubspotIcon from "../assets/image/hubspotIcon.png";
+import excelIcon from "../assets/image/excelIcon.png";
+import workdayIcon from "../assets/image/workdayIcon.png";
+import bamboohrIcon from "../assets/image/bamboohrIcon.png";
+import linkedinIcon from "../assets/image/linkedinIcon.png";
+import hrsoftIcon from "../assets/image/hrsoftIcon.png";
+import adobePhotoshopIcon from "../assets/image/adobePhotoshopIcon.png";
+import adobeIllustratorIcon from "../assets/image/adobeIllustratorIcon.png";
+import adobeInDesignIcon from "../assets/image/adobeInDesignIcon.png";
+import figmaIcon from "../assets/image/figmaIcon.png";
+import sketchIcon from "../assets/image/sketchIcon.png";
+import adobeXDIcon from "../assets/image/adobeXDIcon.png";
+import canvaIcon from "../assets/image/canvaIcon.png";
+import invisionIcon from "../assets/image/invisionIcon.png";
+import zeplinIcon from "../assets/image/zeplinIcon.png";
+import prototypingIcon from "../assets/image/prototypingIcon.png";
 import DetailBox from "../components/CourseOverview/DetailBox";
 import Highlights from "../components/CourseOverview/Highlights";
 import FAQ from "../components/CourseOverview/FAQ";
@@ -400,14 +436,14 @@ export default function CourseOverview() {
         "Innovative and immersive learning environment",
       ],
       languages: [
-        // { img: cSharpIcon, name: "C#" },
-        // { img: cPlusPlusIcon, name: "C++" },
+        { img: cSharpIcon, name: "C#" },
+        { img: cPlusPlusIcon, name: "C++" },
       ],
       tools: [
-        // { img: unityIcon, name: "Unity" },
-        // { img: unrealEngineIcon, name: "Unreal Engine" },
-        // { img: blenderIcon, name: "Blender" },
-        // { img: mayaIcon, name: "Maya" },
+        { img: unityIcon, name: "Unity" },
+        { img: unrealEngineIcon, name: "Unreal Engine" },
+        { img: blenderIcon, name: "Blender" },
+        { img: mayaIcon, name: "Maya" },
       ],
       syllabusExplain:
         "The syllabus covers the essential aspects of AR/VR development, including 3D modeling, spatial design, interaction techniques, and platform-specific considerations. You will work on multiple projects to gain hands-on experience with AR/VR tools and technologies, preparing you to create innovative applications for diverse industries.",
@@ -482,15 +518,13 @@ export default function CourseOverview() {
         "Modern classrooms and online learning resources",
       ],
       languages: [
-        // { img: pythonIcon, name: "Python" },
-        // { img: rIcon, name: "R" },
-        // { img: sqlIcon, name: "SQL" },
+        { img: pythonIcon, name: "Python" },
+        { img: sqlIcon, name: "SQL" },
       ],
       tools: [
-        // { img: jupyterIcon, name: "Jupyter Notebook" },
-        // { img: tableauIcon, name: "Tableau" },
-        // { img: powerBiIcon, name: "Power BI" },
-        // { img: awsIcon, name: "AWS" },
+        { img: jupyterIcon, name: "Jupyter Notebook" },
+        { img: tableauIcon, name: "Tableau" },
+        { img: powerBiIcon, name: "Power BI" },
       ],
       syllabusExplain:
         "The syllabus includes a detailed exploration of data science concepts, starting from basic data manipulation to advanced machine learning techniques. You will work on projects that involve data collection, cleaning, analysis, and visualization. The course is designed to build a strong foundation and advanced skills for tackling real-world data science challenges.",
@@ -564,14 +598,14 @@ export default function CourseOverview() {
         "Interactive learning environment with practical applications",
       ],
       languages: [
-        // { img: pythonIcon, name: "Python" },
-        // { img: bashIcon, name: "Bash" },
+        { img: pythonIcon, name: "Python" },
+        { img: bashIcon, name: "Bash" },
       ],
       tools: [
-        // { img: kaliLinuxIcon, name: "Kali Linux" },
-        // { img: wiresharkIcon, name: "Wireshark" },
-        // { img: metasploitIcon, name: "Metasploit" },
-        // { img: nessusIcon, name: "Nessus" },
+        { img: kaliLinuxIcon, name: "Kali Linux" },
+        { img: wiresharkIcon, name: "Wireshark" },
+        { img: metasploitIcon, name: "Metasploit" },
+        { img: nessusIcon, name: "Nessus" },
       ],
       syllabusExplain:
         "The syllabus is designed to provide a thorough understanding of cyber security concepts and techniques. You will learn about network security, threat management, vulnerability assessment, and incident response. The course includes practical labs and projects to apply your knowledge in real-world scenarios, preparing you for a career in cyber security.",
@@ -645,15 +679,15 @@ export default function CourseOverview() {
         "Up-to-date curriculum reflecting current digital marketing trends",
       ],
       languages: [
-        // { img: googleAnalyticsIcon, name: "Google Analytics" },
-        // { img: facebookAdsIcon, name: "Facebook Ads" },
-        // { img: googleAdsIcon, name: "Google Ads" },
+        { img: googleAnalyticsIcon, name: "Google Analytics" },
+        { img: facebookAdsIcon, name: "Facebook Ads" },
+        { img: googleAdsIcon, name: "Google Ads" },
       ],
       tools: [
-        // { img: semrushIcon, name: "SEMrush" },
-        // { img: ahrefsIcon, name: "Ahrefs" },
-        // { img: mailchimpIcon, name: "Mailchimp" },
-        // { img: hubspotIcon, name: "HubSpot" },
+        { img: semrushIcon, name: "SEMrush" },
+        { img: ahrefsIcon, name: "Ahrefs" },
+        { img: mailchimpIcon, name: "Mailchimp" },
+        { img: hubspotIcon, name: "HubSpot" },
       ],
       syllabusExplain:
         "The syllabus includes a comprehensive exploration of digital marketing strategies and tools. You will learn how to develop and execute marketing plans, manage social media campaigns, optimize websites for search engines, and analyze marketing data. The course features practical assignments and real-world case studies to build your expertise.",
@@ -728,14 +762,13 @@ export default function CourseOverview() {
         "Up-to-date curriculum reflecting current HR trends and practices",
       ],
       languages: [
-        // { img: excelIcon, name: "Excel" },
-        // { img: sapIcon, name: "SAP" },
+        { img: excelIcon, name: "Excel" },
       ],
       tools: [
-        // { img: workdayIcon, name: "Workday" },
-        // { img: bamboohrIcon, name: "BambooHR" },
-        // { img: linkedinIcon, name: "LinkedIn Recruiter" },
-        // { img: hrsoftIcon, name: "HRSoft" },
+        { img: workdayIcon, name: "Workday" },
+        { img: bamboohrIcon, name: "BambooHR" },
+        { img: linkedinIcon, name: "LinkedIn Recruiter" },
+        { img: hrsoftIcon, name: "HRSoft" },
       ],
       syllabusExplain:
         "The syllabus includes a thorough examination of Human Resource Management practices, focusing on areas such as strategic HRM, recruitment and selection, employee development, and HR analytics. The course features practical assignments and case studies to develop your skills in managing HR functions and addressing organizational needs.",
@@ -810,15 +843,15 @@ export default function CourseOverview() {
         "Up-to-date curriculum reflecting current design trends and practices",
       ],
       languages: [
-        // { img: adobePhotoshopIcon, name: "Adobe Photoshop" },
-        // { img: adobeIllustratorIcon, name: "Adobe Illustrator" },
-        // { img: adobeInDesignIcon, name: "Adobe InDesign" },
+        { img: adobePhotoshopIcon, name: "Adobe Photoshop" },
+        { img: adobeIllustratorIcon, name: "Adobe Illustrator" },
+        { img: adobeInDesignIcon, name: "Adobe InDesign" },
       ],
       tools: [
-        // { img: sketchIcon, name: "Sketch" },
-        // { img: figmaIcon, name: "Figma" },
-        // { img: adobeXDIcon, name: "Adobe XD" },
-        // { img: canvaIcon, name: "Canva" },
+        { img: sketchIcon, name: "Sketch" },
+        { img: figmaIcon, name: "Figma" },
+        { img: adobeXDIcon, name: "Adobe XD" },
+        { img: canvaIcon, name: "Canva" },
       ],
       syllabusExplain:
         "The syllabus covers essential graphic design principles and techniques, from basic design theory to advanced software skills. You will work on various design projects, including logo design, digital illustrations, and marketing materials. The course emphasizes practical skills and creative problem-solving to prepare you for a successful career in graphic design.",
@@ -893,14 +926,14 @@ export default function CourseOverview() {
         "Up-to-date curriculum reflecting current UI/UX design trends and practices",
       ],
       languages: [
-        // { img: sketchIcon, name: "Sketch" },
-        // { img: figmaIcon, name: "Figma" },
-        // { img: adobeXDIcon, name: "Adobe XD" },
+        { img: sketchIcon, name: "Sketch" },
+        { img: figmaIcon, name: "Figma" },
+        { img: adobeXDIcon, name: "Adobe XD" },
       ],
       tools: [
-        // { img: invisionIcon, name: "InVision" },
-        // { img: zeplinIcon, name: "Zeplin" },
-        // { img: prototypingIcon, name: "Prototyping Tools" },
+        { img: invisionIcon, name: "InVision" },
+        { img: zeplinIcon, name: "Zeplin" },
+        { img: prototypingIcon, name: "Prototyping Tools" },
       ],
       syllabusExplain:
         "The syllabus includes a comprehensive exploration of UI/UX design principles, focusing on user-centered design, interaction design, and visual aesthetics. You will work on projects that involve user research, wireframing, prototyping, and usability testing. The course emphasizes practical skills and creative problem-solving to prepare you for a successful career in UI/UX design.",
@@ -974,15 +1007,14 @@ export default function CourseOverview() {
         "Up-to-date curriculum reflecting current data analysis trends and practices",
       ],
       languages: [
-        // { img: pythonIcon, name: "Python" },
-        // { img: rIcon, name: "R" },
-        // { img: sqlIcon, name: "SQL" },
+        { img: pythonIcon, name: "Python" },
+        { img: sqlIcon, name: "SQL" },
       ],
       tools: [
-        // { img: excelIcon, name: "Excel" },
-        // { img: tableauIcon, name: "Tableau" },
-        // { img: powerbiIcon, name: "Power BI" },
-        // { img: jupyterIcon, name: "Jupyter Notebook" },
+        { img: excelIcon, name: "Excel" },
+        { img: tableauIcon, name: "Tableau" },
+        { img: powerBiIcon, name: "Power BI" },
+        { img: jupyterIcon, name: "Jupyter Notebook" },
       ],
       syllabusExplain:
         "The syllabus covers key aspects of data analysis, including data collection, cleaning, exploration, and visualization. You will learn to use various tools and techniques to analyze data and present insights effectively. The course features practical assignments and real-world case studies to develop your skills and prepare you for a career in data analysis.",
