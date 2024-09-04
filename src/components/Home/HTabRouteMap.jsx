@@ -8,9 +8,9 @@ export default function HTabRouteMap() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabTitles = [
-    "Enrolment Assistance",
-    "Career Counselling",
-    "University Admission",
+    "Career Counseling",
+    "Why Choose Us?",
+    "Join Our Community",
   ];
 
   const handleTabClick = (index) => {
@@ -55,17 +55,17 @@ export default function HTabRouteMap() {
         {/* tab-1 */}
         {activeTab === 0 && (
           <>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mt0">
               <div className="w-1/3">
                 <div className="bg-[#000080] text-[#fff] w-10 h-10 rounded-full flex items-center justify-center mb-4">
                   01
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-[#c50101]">
-                  Career Counselling
+                  Career Counseling
                 </h3>
                 <p className="text-black">
-                  Course tailored for professionals with a balance of recorded &
-                  live sessions, case studies & assessments.
+                  Personalized guidance to help you discover your strengths,
+                  interests, and career goals
                 </p>
               </div>
 
@@ -78,11 +78,11 @@ export default function HTabRouteMap() {
                   03
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-[#c50101]">
-                  Real Time Support
+                  Professional Training
                 </h3>
                 <p className="text-black">
-                  Instant support from AI-powered bots & your upGrad Buddy to
-                  resolve all your queries
+                  Industry-relevant training programs designed to enhance your
+                  skills and boost your employability.
                 </p>
               </div>
             </div>
@@ -92,11 +92,11 @@ export default function HTabRouteMap() {
                 02
               </div>
               <h3 className="text-xl font-bold mb-2 text-[#c50101]">
-                Hands-on Learning
+                Placement Assistance
               </h3>
               <p className="text-black max-w-md mx-auto">
-                Expert-led, personalized sessions for conceptual clarity & a
-                tailored action plan for your goals.
+                Connecting you with top employers and helping you land the job
+                you deserve.
               </p>
             </div>
           </>
@@ -110,11 +110,11 @@ export default function HTabRouteMap() {
                   01
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-[#c50101]">
-                  Premium Job Openings
+                  Expert Guidance
                 </h3>
                 <p className="text-black">
-                  Exclusive job openings from Career Streesman's 100+ hiring
-                  partners
+                  Learn from seasoned professionals with extensive industry
+                  experience.
                 </p>
               </div>
 
@@ -127,11 +127,11 @@ export default function HTabRouteMap() {
                   03
                 </div>
                 <h3 className="text-xl font-bold text-[#c50101] mb-2">
-                  Global Alumni Network
+                  Proven Results
                 </h3>
                 <p className="text-black">
-                  Access to the upGrad alumni community with 25,000+ successful
-                  professionals from across the world
+                  Our clients consistently achieve their career goals and
+                  experience significant growth in their professional lives.
                 </p>
               </div>
             </div>
@@ -141,11 +141,11 @@ export default function HTabRouteMap() {
                 02
               </div>
               <h3 className="text-xl font-bold mb-2 text-[#c50101]">
-                Personalized Career Coaching
+                Tailored Approach
               </h3>
               <p className="text-black max-w-md mx-auto">
-                Multiple 1:1 coaching calls with certified industry veterans to
-                drive your career forward
+                We understand that every career journey is unique. Our services
+                are customized to fit your individual needs.
               </p>
             </div>
           </>
@@ -160,11 +160,12 @@ export default function HTabRouteMap() {
                   01
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-[#c50101]">
-                  Career Counselling
+                  Community and Growth
                 </h3>
                 <p className="text-black">
-                  Speak to expert counsellors who will guide you towards the
-                  ideal program for your career aspirations
+                  Be part of a supportive community where you can connect with
+                  like-minded individuals, learn from experts, and take your
+                  career to the next level.
                 </p>
               </div>
 
@@ -177,11 +178,12 @@ export default function HTabRouteMap() {
                   03
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-[#c50101]">
-                  Flexible Payment Plans
+                  Personalized Support
                 </h3>
                 <p className="text-black">
-                  Say goodbye to hefty student loans. Get assistance in finding
-                  the best, personalized payment plans
+                  Benefit from a personalized approach that understands your
+                  unique needs and provides the support you need to succeed in
+                  your career.
                 </p>
               </div>
             </div>
@@ -191,11 +193,12 @@ export default function HTabRouteMap() {
                 02
               </div>
               <h3 className="text-xl font-bold text-[#c50101] mb-2">
-                University Admission
+                Comprehensive Resources
               </h3>
               <p className="text-black max-w-md mx-auto">
-                Get expert support every step of the way to ease the stress of
-                the University's admission process
+                Access a wealth of career development resources, including
+                expert guidance, tailored advice, and tools to help you achieve
+                your goals.
               </p>
             </div>
           </>

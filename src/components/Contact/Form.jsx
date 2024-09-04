@@ -69,10 +69,11 @@ export default function Form() {
 
   return (
     <div className="py-16">
-      <div className="bg-white py-16 shadow-lg rounded-md">
-        <h1 className="font-bold text-4xl text-center mb-7 text-[#000080]">
-          CONTACT US
+      <div className=" rounded-md">
+        <h1 className="font-bold text-4xl text-center mb-8 text-[#000080]">
+          Send Us a Message
         </h1>
+
         <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
           <div className="relative z-0 w-full mb-6 group">
             <input
@@ -109,7 +110,9 @@ export default function Form() {
             >
               Email address
             </label>
-            {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+            {errors.email && (
+              <p className="text-red-500 text-sm">{errors.email}</p>
+            )}
           </div>
           <div className="relative z-0 w-full mb-6 group">
             <input
@@ -128,7 +131,9 @@ export default function Form() {
             >
               Phone Number
             </label>
-            {errors.number && <p className="text-red-500 text-sm">{errors.number}</p>}
+            {errors.number && (
+              <p className="text-red-500 text-sm">{errors.number}</p>
+            )}
           </div>
           <label htmlFor="message" className="block mb-2 text-sm font-medium">
             Your message

@@ -11,7 +11,7 @@ function Navbar() {
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Courses", link: "/courses" },
-    { name: "Hire Us", link: "/careers" },
+    { name: "Hire From Us", link: "/careers" },
     { name: "Contact", link: "/contact" },
   ];
 

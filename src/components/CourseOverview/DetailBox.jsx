@@ -70,7 +70,7 @@ export default function DetailBox({ courseDetails, syllabusDetail }) {
             ) : (
               <>
                 <h1 className="text-xl ">INTERVIEW SPECIFIC</h1>
-                <h1 className="text-2xl font-semibold">GROOMING                </h1>
+                <h1 className="text-2xl font-semibold">GROOMING</h1>
                 <h1 className="text-lg ">SESSIONS</h1>
               </>
             )}

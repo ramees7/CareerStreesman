@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import bgFrame from '../../assets/image/bgframe.webp'
+import bgFrame from "../../assets/image/bgframe.webp";
 export default function Landing() {
   return (
     <div>
@@ -8,19 +8,15 @@ export default function Landing() {
         <div className="flex justify-center items-center w-full h-full">
           <div>
             <h1 className="lg:text-7xl md:text-6xl text-4xl font-bold text-center py-2 landing-heading">
-              Get the tech career <br /> you deserve. Faster.
+              Welcome to <br /> CareerSteersman
             </h1>
             <h5 className="text-center md:text-lg text-sm text-black ">
-              Structured coding courses that get you there faster with
-              confidence.
+              Your Guide to a Successful Career Path
             </h5>
           </div>
         </div>
-        <img src={bgFrame} alt="" className="w-full"/>
+        <img src={bgFrame} alt="" className="w-full" />
       </div>
-      
-
     </div>
   );
 }
-
