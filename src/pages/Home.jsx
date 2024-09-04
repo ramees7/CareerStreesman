@@ -7,6 +7,7 @@ import HCourses from "../components/Home/HCourses";
 import HTabRouteMap from "../components/Home/HTabRouteMap";
 import Review from "../components/Home/Review";
 import Support from "../components/Home/Support";
+import PlacedStudents from "../components/Home/PlacedStudents";
 
 export default function Home() {
   const handleToTop = () => {
@@ -28,6 +29,7 @@ export default function Home() {
       <Testimonials/>
       <HCourses/>
       <Review/>
+      <PlacedStudents/>
       <Support/>
     </div>
   );
