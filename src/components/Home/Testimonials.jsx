@@ -32,7 +32,7 @@ export default function Testimonials() {
         <div className="absolute top-[40%]  md:left-[47%] left-[43%] bg-[#000080] rounded-full md:p-6 p-5 shadow-lg  hover:cursor-pointer">
           <TestimonialModal video={videoLinks[4]} centerButton={centerButton} />
         </div>
-        <div className="absolute bottom-[10%] left-1/4  rounded-full md:p-5 p-4 shadow-md">
+        <div className="absolute bottom-[10%] left-1/4  rounded-full md:p-5 p-4 shadow-md hover:cursor-pointer">
           <TestimonialModal video={videoLinks[2]} />
         </div>
         <div className="absolute bottom-[10%] right-1/4  rounded-full md:p-5 p-4 shadow-md  hover:cursor-pointer">

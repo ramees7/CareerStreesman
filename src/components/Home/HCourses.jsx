@@ -140,7 +140,7 @@ export default function HCourses() {
           <>
             <div className="flex justify-between flex-wrap gap-x-20 gap-y-6">
               {nonItCourses?.map((item, index) => (
-                <Link to={`${item.link}`} key={item.name} className="">
+                <Link to={`/courses/${item.link}`} key={item.name} className="">
                   <div
                     className={`flex justify-center items-center flex-col w-[150px] h-[150px] text-[#000080] transition-transform transform hover:scale-125 hover:text-[#c50101] duration-300 ${
                       index % 2 === 1 ? "mt-20" : "mt-0"

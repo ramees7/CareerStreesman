@@ -29,7 +29,7 @@ export default function HTabRouteMap() {
               key={index}
               className={`flex items-center space-x-2 ${
                 index === activeTab
-                  ? "text-[#c50101] font-semibold"
+                  ? "text-[#c50101] font-semibold "
                   : "text-[#000080] font-semibold"
               }`}
               onClick={() => handleTabClick(index)}
@@ -37,12 +37,12 @@ export default function HTabRouteMap() {
               <div
                 className={`w-6 h-6 rounded-full ${
                   index === activeTab
-                    ? "bg-[#c50101] flex items-center justify-center"
+                    ? "bg-[#c50101] flex border-2 items-center justify-center"
                     : "border-2 border-[#000080]"
                 }`}
               >
                 {index === activeTab && (
-                  <FaCheck className="w-4 h-4 text-white" />
+                  <FaCheck className="w-3 h-3 text-white" />
                 )}
               </div>
               <span>{title}</span>

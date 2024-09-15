@@ -142,7 +142,7 @@ export default function Form() {
             id="message"
             rows="4"
             name="message"
-            className="block p-2.5 w-full text-sm rounded-lg border border-black focus:ring-[#000080] focus:border-[#000080] dark:text-black dark:focus:ring-[#000080] dark:focus:border-[#000080]"
+            className="block p-2.5 w-full text-sm rounded-lg bg-[#eaeff5] border border-[#000080]  dark:text-black dark:focus:ring-[#000080] dark:focus:border-[#000080]"
             placeholder="Leave a comment..."
             value={formData.message}
             onChange={handleChange}

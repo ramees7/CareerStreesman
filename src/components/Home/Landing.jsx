@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import bgFrame from "../../assets/image/bgframe.webp";
 export default function Landing() {
   return (
     <div>
@@ -15,7 +14,6 @@ export default function Landing() {
             </h5>
           </div>
         </div>
-        <img src={bgFrame} alt="" className="w-full" />
       </div>
     </div>
   );
