@@ -8,7 +8,7 @@ import HTabRouteMap from "../components/Home/HTabRouteMap";
 import Review from "../components/Home/Review";
 import Support from "../components/Home/Support";
 import PlacedStudents from "../components/Home/PlacedStudents";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   const handleToTop = () => {

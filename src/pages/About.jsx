@@ -4,7 +4,8 @@ import Why from "../components/About/Why";
 import VideoContent from "../components/About/VideoContent";
 import AnimatingContent from "../components/About/AnimatingContent";
 import Comparison from "../components/About/Comparison";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function About() {
   const handleToTop = () => {

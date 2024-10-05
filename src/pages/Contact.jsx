@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Form from "../components/Contact/Form";
 import Address from "../components/Contact/Address";
 import ContactLanding from "../components/Contact/ContactLanding";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
   const handleToTop = () => {

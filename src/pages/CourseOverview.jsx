@@ -71,7 +71,7 @@ import Highlights from "../components/CourseOverview/Highlights";
 import FAQ from "../components/CourseOverview/FAQ";
 import CareerFootPrint from "../components/Courses/CareerFootPrint";
 import CareerStats from "../components/Courses/CareerStats";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function CourseOverview() {
   const location = useLocation();

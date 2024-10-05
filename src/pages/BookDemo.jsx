@@ -1,6 +1,6 @@
 import { message } from "antd";
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function BookDemo() {
   const [formData, setFormData] = useState({

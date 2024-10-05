@@ -3,7 +3,7 @@ import HiringLanding from "../components/Hiring/HiringLanding";
 import Benefits from "../components/Hiring/Benefits";
 import Talent from "../components/Hiring/Talent";
 import PlacedStudents from "../components/Home/PlacedStudents";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function Hiring() {
   const handleToTop = () => {

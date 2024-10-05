@@ -3,7 +3,7 @@ import AllCourses from "../components/Courses/AllCourses";
 import CourseLanding from "../components/Courses/CourseLanding";
 import CareerFootPrint from "../components/Courses/CareerFootPrint";
 import CareerStats from "../components/Courses/CareerStats";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function Courses() {
   const handleToTop = () => {
