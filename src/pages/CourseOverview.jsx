@@ -71,6 +71,7 @@ import Highlights from "../components/CourseOverview/Highlights";
 import FAQ from "../components/CourseOverview/FAQ";
 import CareerFootPrint from "../components/Courses/CareerFootPrint";
 import CareerStats from "../components/Courses/CareerStats";
+import { Helmet } from "react-helmet";
 
 export default function CourseOverview() {
   const location = useLocation();
@@ -761,9 +762,7 @@ export default function CourseOverview() {
         "Interactive learning environment with real-world scenarios",
         "Up-to-date curriculum reflecting current HR trends and practices",
       ],
-      languages: [
-        { img: excelIcon, name: "Excel" },
-      ],
+      languages: [{ img: excelIcon, name: "Excel" }],
       tools: [
         { img: workdayIcon, name: "Workday" },
         { img: bamboohrIcon, name: "BambooHR" },
@@ -1078,6 +1077,32 @@ export default function CourseOverview() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Course Overview - Career Streesman</title>
+        <link
+          rel="canonical"
+          href="https://careersteersman.com/course-overview"
+        />
+        <meta
+          name="description"
+          content="Explore the comprehensive course offerings at Career Streesman. Discover the skills you will gain and the opportunities available."
+        />
+        <meta
+          property="og:title"
+          content="Course Overview - Career Streesman"
+        />
+        <meta
+          property="og:description"
+          content="Explore the comprehensive course offerings at Career Streesman. Discover the skills you will gain and the opportunities available."
+        />
+        <meta property="og:image" content="../assets/image/icon-logo.png" />
+        <meta
+          property="og:url"
+          content="https://careersteersman.com/course-overview"
+        />
+      </Helmet>
+
       <div>
         {courseDetails?.map(
           (item) =>

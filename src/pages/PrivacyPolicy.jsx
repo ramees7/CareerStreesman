@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 export default function PrivacyPolicy() {
   const handleToTop = () => {
@@ -12,7 +13,36 @@ export default function PrivacyPolicy() {
     handleToTop();
   }, []);
   return (
-    <div className=" xl:px-52 lg:px-40 md:px-28 px-5  py-16" style={{background: 'linear-gradient(94deg, rgba(0,0,128,1) 0%, rgba(197,1,1,1) 100%)' }}>
+    <div
+      className=" xl:px-52 lg:px-40 md:px-28 px-5  py-16"
+      style={{
+        background:
+          "linear-gradient(94deg, rgba(0,0,128,1) 0%, rgba(197,1,1,1) 100%)",
+      }}
+    >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Privacy Policy - Career Streesman</title>
+        <link
+          rel="canonical"
+          href="https://careersteersman.com/privacypolicy"
+        />
+        <meta
+          name="description"
+          content="Read our Privacy Policy to understand how Career Streesman collects, uses, and protects your personal information."
+        />
+        <meta property="og:title" content="Privacy Policy - Career Streesman" />
+        <meta
+          property="og:description"
+          content="Read our Privacy Policy to understand how Career Streesman collects, uses, and protects your personal information."
+        />
+        <meta property="og:image" content="../assets/image/icon-logo.png" />
+        <meta
+          property="og:url"
+          content="https://careersteersman.com/privacypolicy"
+        />
+      </Helmet>
+
       <div className="max-w-3xl mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
         <h1 className="text-2xl font-bold mb-4 text-[#000080]">
           Career Streesman Privacy Policy
@@ -21,10 +51,11 @@ export default function PrivacyPolicy() {
           <strong>Effective Date:</strong> 01-January-2024
         </p>
         <p className="mb-4">
-        Career Streesman Technologies Pvt. Ltd. (Career Streesman,” “we,” “our,” or “us”) uses
-          cookies and similar tracking technologies to enhance your experience
-          on our website and services. This Cookie Policy explains what cookies
-          are, how we use them, and your choices regarding their use.
+          Career Streesman Technologies Pvt. Ltd. (Career Streesman,” “we,”
+          “our,” or “us”) uses cookies and similar tracking technologies to
+          enhance your experience on our website and services. This Cookie
+          Policy explains what cookies are, how we use them, and your choices
+          regarding their use.
         </p>
 
         <h2 className="text-lg font-semibold mt-6 mb-2">
@@ -125,13 +156,15 @@ export default function PrivacyPolicy() {
         <p className="my-4 font-semibold">Opt-Out Links</p>
         <ul className="ps-7 list-disc list-inside mb-4">
           <li>
-            <span className="font-semibold">Google Analytics:</span> You can opt-out of Google Analytics by installing
-            the Google Analytics opt-out browser add-on.
+            <span className="font-semibold">Google Analytics:</span> You can
+            opt-out of Google Analytics by installing the Google Analytics
+            opt-out browser add-on.
           </li>
           <li>
-          <span className="font-semibold">Advertising Cookies:</span> You can opt-out of interest-based ads by
-            visiting the Network Advertising Initiative opt-out page or the
-            Digital Advertising Alliance opt-out page.
+            <span className="font-semibold">Advertising Cookies:</span> You can
+            opt-out of interest-based ads by visiting the Network Advertising
+            Initiative opt-out page or the Digital Advertising Alliance opt-out
+            page.
           </li>
         </ul>
         <h2 className="text-lg font-semibold mt-6 mb-2">

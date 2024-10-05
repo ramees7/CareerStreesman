@@ -26,7 +26,7 @@ function Navbar() {
       >
         <Link to={'/'}>
           <div className="lg:w-40 flex items-center space-x-3 rtl:space-x-reverse">
-            <img src={logo} className="h-16" alt="logo" />
+            <img src={logo} className="h-16" alt="Career Steersman Logo" />
           </div>
         </Link>
         <button

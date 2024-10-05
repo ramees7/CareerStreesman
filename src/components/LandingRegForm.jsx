@@ -19,12 +19,10 @@ export default function LandingRegForm() {
       [e.target.name]: e.target.value,
     });
 
-    // Reset email error when the user starts typing
     if (e.target.name === "email") {
       setEmailError("");
     }
 
-    // Reset phone number error when the user starts typing
     if (e.target.name === "number") {
       setNumberError("");
     }
@@ -42,7 +40,6 @@ export default function LandingRegForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validate email
     if (!validateEmail(formData.email)) {
       setEmailError("Please enter a valid email address.");
       return;
@@ -87,7 +84,6 @@ export default function LandingRegForm() {
 
   return (
     <div>
-      {/* Modal toggle button */}
       {showForm && (
         <button
           onClick={() => setShowForm(false)}
@@ -98,12 +94,10 @@ export default function LandingRegForm() {
         </button>
       )}
 
-      {/* Modal */}
       {showForm && (
         <div className="fixed inset-0 bg-[#000] bg-opacity-90 flex items-center justify-center z-50">
           <div className="relative p-4 w-full max-w-md max-h-full">
             <div className="relative bg-black rounded-lg shadow">
-              {/* Modal header */}
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
                 <h3 className="text-2xl font-semibold text-[#fff]">Register</h3>
                 <button
@@ -116,7 +110,6 @@ export default function LandingRegForm() {
                   <span className="sr-only">Close modal</span>
                 </button>
               </div>
-              {/* Modal body */}
               <div className="p-4 md:p-5">
                 <form className="space-y-4" onSubmit={handleSubmit}>
                   <div>

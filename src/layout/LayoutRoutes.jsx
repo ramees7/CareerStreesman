@@ -14,9 +14,10 @@ import CopyRightPolicy from "../pages/CopyRightPolicy";
 import Hiring from "../pages/Hiring";
 import CourseOverview from "../pages/CourseOverview";
 import BookDemo from "../pages/BookDemo";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function LayoutRoutes() {
-  const [showHeaderNav, setShowHeaderNav] = useState(true); 
+  const [showHeaderNav, setShowHeaderNav] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
 
   useEffect(() => {
@@ -37,59 +38,71 @@ export default function LayoutRoutes() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
-  const courseNames=[
+  const courseNames = [
     {
-      name:"Java Full Stack",
-      url:"java-full-stack"
+      name: "Java Full Stack",
+      url: "java-full-stack",
     },
     {
-      name:"Python Full Stack",
-      url:"python-full-stack"
+      name: "Python Full Stack",
+      url: "python-full-stack",
     },
     {
-      name:"MERN Full Stack",
-      url:"mern-full-stack"
+      name: "MERN Full Stack",
+      url: "mern-full-stack",
     },
     {
-      name:"Flutter App Development",
-      url:"flutter-app-development"
+      name: "Flutter App Development",
+      url: "flutter-app-development",
     },
     {
-      name:"AR /VR Development",
-      url:"ar-vr-development"
+      name: "AR /VR Development",
+      url: "ar-vr-development",
     },
     {
-      name:"Data Science",
-      url:"data-science"
+      name: "Data Science",
+      url: "data-science",
     },
     {
-      name:"Cyber Security",
-      url:"cyber-security"
+      name: "Cyber Security",
+      url: "cyber-security",
     },
     {
-      name:"Digital Marketing",
-      url:"digital-marketing"
+      name: "Digital Marketing",
+      url: "digital-marketing",
     },
     {
-      name:"Human Resource Management",
-      url:"human-resource-management"
+      name: "Human Resource Management",
+      url: "human-resource-management",
     },
     {
-      name:"Graphic Designing",
-      url:"graphic-designing"
+      name: "Graphic Designing",
+      url: "graphic-designing",
     },
     {
-      name:"UI / UX Designer",
-      url:"ui-ux-designer"
+      name: "UI / UX Designer",
+      url: "ui-ux-designer",
     },
     {
-      name:"Data Analysts",
-      url:"data-analysts"
+      name: "Data Analysts",
+      url: "data-analysts",
     },
-  ]
+  ];
 
   return (
     <BrowserRouter>
+      <div
+        style={{
+          position: "fixed",
+          zIndex: "10",
+          bottom: "20px",
+          right: "10px",
+        }}
+      >
+        <a href="https://wa.me/09871" target="_blank">
+          <IoLogoWhatsapp className="text-5xl text-[#075E54]"/>
+        </a>
+      </div>
       <div
         className={`sticky top-0 w-full z-50 transition-transform duration-1000 ${
           showHeaderNav ? "translate-y-0" : "-translate-y-full"
@@ -103,11 +116,13 @@ export default function LayoutRoutes() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/careers" element={<Hiring />} />
-        {
-          courseNames?.map((item)=>(
-            <Route path={`courses/${item.url}`} key={item.name} element={<CourseOverview />} />
-          ))
-        }
+        {courseNames?.map((item) => (
+          <Route
+            path={`courses/${item.url}`}
+            key={item.name}
+            element={<CourseOverview />}
+          />
+        ))}
         <Route path="/book-demo" element={<BookDemo />} />
         <Route path="/termsofservice" element={<TermsOfService />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
@@ -116,7 +131,7 @@ export default function LayoutRoutes() {
         <Route path="/*" element={<Home />} />
       </Routes>
       <Footer />
-      <LandingRegForm/>
+      <LandingRegForm />
     </BrowserRouter>
   );
 }

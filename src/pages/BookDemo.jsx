@@ -1,5 +1,6 @@
 import { message } from "antd";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 export default function BookDemo() {
   const [formData, setFormData] = useState({
@@ -85,6 +86,25 @@ export default function BookDemo() {
   }, []);
   return (
     <div className="py-16  xl:px-52 lg:px-40 md:px-28 px-5 bg-[#eaeff5]">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Book Demo - Career Streesman</title>
+        <link rel="canonical" href="https://careersteersman.com/book-demo" />
+        <meta
+          name="description"
+          content="Schedule a demo with Career Streesman to explore our services and how we can support your career journey."
+        />
+        <meta property="og:title" content="Book Demo - Career Streesman" />
+        <meta
+          property="og:description"
+          content="Schedule a demo with Career Streesman to explore our services and how we can support your career journey."
+        />
+        <meta property="og:image" content="../assets/image/icon-logo.png" />
+        <meta
+          property="og:url"
+          content="https://careersteersman.com/book-demo"
+        />
+      </Helmet>
       <div className="bg-white py-16 shadow-lg rounded-md">
         <h1 className="font-bold text-4xl text-center mb-7 text-[#000080]">
           Book Free Demo

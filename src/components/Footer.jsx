@@ -51,6 +51,7 @@ export default function Footer() {
               key={item.name}
               title={item.name}
               target="_blank"
+              rel="noopener noreferrer"
               className="lg:text-6xl md:text-4xl text-3xl text-[#000080]"
             >
               {item.icon}
@@ -81,7 +82,6 @@ export default function Footer() {
                     <li>
                       <Link to={"/book-demo"}>Book Free Demo</Link>
                     </li>
-                    {/* <li>Blog</li> */}
                   </ul>
                 </div>
                 <div>
@@ -120,7 +120,11 @@ export default function Footer() {
                   <ul className="text-black">
                     {socialMedia?.map((item) => (
                       <li key={item.link}>
-                        <Link to={`${item.link}`} target="_blank">
+                        <Link
+                          to={`${item.link}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {item.name}
                         </Link>
                       </li>
@@ -136,7 +140,12 @@ export default function Footer() {
         <div className="flex gap-1 items-center font-bold text-lg">
           <FaPhoneAlt />
           <h1>Contact Us :</h1>
-          <a href="tel:7907348039" target="_blank" className="text-[#000080]">
+          <a
+            href="tel:7907348039"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#000080]"
+          >
             {" "}
             +91 79073 48039
           </a>
@@ -147,6 +156,7 @@ export default function Footer() {
           <a
             href="mailto:doctosmartacademy@gmail.com"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-[#000080]"
           >
             doctosmartacademy@gmail.com

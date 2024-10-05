@@ -6,7 +6,7 @@ export default function HAbout() {
   return (
     <div>
       <div className="flex flex-col lg:flex-row gap-4 bg-[#000080] py-12 px-5 ">
-      {/* <div className="flex flex-col lg:flex-row gap-4 bg-[#000080] py-12  sticky top-20 px-5 z-10"> */}
+        {/* <div className="flex flex-col lg:flex-row gap-4 bg-[#000080] py-12  sticky top-20 px-5 z-10"> */}
         <div className="flex-1 ">
           <div className="space-y-4 ">
             <h1 className="text-3xl font-semibold text-[#fff]">
@@ -57,10 +57,11 @@ export default function HAbout() {
         <div className="flex-1 mt-5 lg:mt-0">
           <div className="space-y-4">
             <h1 className="text-3xl font-semibold text-[#fff]">
-              Seamless Learning Experience
+              Personalized Learning Paths
             </h1>
             <p className="text-[#fff]">
-              Experience learning by doing with our interactive platform.
+              Tailored learning journeys based on your individual needs and
+              pace.
             </p>
             <ul className="space-y-5 ">
               <li className="flex items-center text-[#fff] gap-2">
@@ -84,10 +85,5 @@ export default function HAbout() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-
-
-
-

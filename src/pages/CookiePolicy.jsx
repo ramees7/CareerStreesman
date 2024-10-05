@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 export default function CookiePolicy() {
   const handleToTop = () => {
@@ -13,7 +14,36 @@ export default function CookiePolicy() {
   }, []);
 
   return (
-    <div className="xl:px-52 lg:px-40 md:px-28 px-5 py-16" style={{background: 'linear-gradient(94deg, rgba(0,0,128,1) 0%, rgba(197,1,1,1) 100%)' }}>
+    <div
+      className="xl:px-52 lg:px-40 md:px-28 px-5 py-16"
+      style={{
+        background:
+          "linear-gradient(94deg, rgba(0,0,128,1) 0%, rgba(197,1,1,1) 100%)",
+      }}
+    >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Cookie Policy - Career Streesman</title>
+        <link
+          rel="canonical"
+          href="https://careersteersman.com/cookiepolicy"
+        />
+        <meta
+          name="description"
+          content="Learn about our cookie policy at Career Streesman and how we use cookies to enhance your experience."
+        />
+        <meta property="og:title" content="Cookie Policy - Career Streesman" />
+        <meta
+          property="og:description"
+          content="Learn about our cookie policy at Career Streesman and how we use cookies to enhance your experience."
+        />
+        <meta property="og:image" content="../assets/image/icon-logo.png" />
+        <meta
+          property="og:url"
+          content="https://careersteersman.com/cookiepolicy"
+        />
+      </Helmet>
+
       <div className="max-w-3xl mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
         <h1 className="text-2xl font-bold mb-4 text-[#000080]">
           Career Streesman Cookie Policy
@@ -22,10 +52,10 @@ export default function CookiePolicy() {
           <strong>Effective Date:</strong> 01-January-2024
         </p>
         <p className="mb-4">
-          Welcome to Carees Streesman Technologies Pvt. Ltd. (“Carees Streesman,” “we,” “our,” or
-          “us”). By accessing or using our website and services, you agree to
-          comply with and be bound by the following terms and conditions
-          (“Terms”).
+          Welcome to Carees Streesman Technologies Pvt. Ltd. (“Carees
+          Streesman,” “we,” “our,” or “us”). By accessing or using our website
+          and services, you agree to comply with and be bound by the following
+          terms and conditions (“Terms”).
         </p>
 
         <h2 className="text-lg font-semibold mt-6 mb-2">
@@ -40,8 +70,8 @@ export default function CookiePolicy() {
           2. Services Provided
         </h2>
         <p className="mb-4">
-          Carees Streesman offers educational courses in both online and offline modes.
-          Our services are designed to provide high-quality education and
+          Carees Streesman offers educational courses in both online and offline
+          modes. Our services are designed to provide high-quality education and
           training in various subjects.
         </p>
 
@@ -62,17 +92,21 @@ export default function CookiePolicy() {
             Communicate important updates and information regarding our
             services.
           </li>
-          <li>Enhance your learning experience through the Carees Streesman app.</li>
+          <li>
+            Enhance your learning experience through the Carees Streesman app.
+          </li>
         </ul>
 
         <h2 className="text-lg font-semibold mt-6 mb-2">
           5. Payment and Refund Policy
         </h2>
-        <p className="mb-4">Carees Streesman's payment and refund policy includes:</p>
+        <p className="mb-4">
+          Carees Streesman's payment and refund policy includes:
+        </p>
         <ul className="ps-7 list-disc list-inside mb-4">
           <li>
-            <span className="font-semibold">No Refunds:</span> Carees Streesman does not
-            offer refunds for any courses purchased.
+            <span className="font-semibold">No Refunds:</span> Carees Streesman
+            does not offer refunds for any courses purchased.
           </li>
           <li>
             <span className="font-semibold">Course Batches:</span> You may
@@ -91,12 +125,15 @@ export default function CookiePolicy() {
         <h2 className="text-lg font-semibold mt-6 mb-2">
           6. Intellectual Property
         </h2>
-        <p className="mb-4">Carees Streesman's intellectual property terms include:</p>
+        <p className="mb-4">
+          Carees Streesman's intellectual property terms include:
+        </p>
         <ul className="ps-7 list-disc list-inside mb-4">
           <li>
-            <span className="font-semibold">Trademarks:</span> “Carees Streesman” is a
-            registered trademark of Carees Streesman Technologies Pvt. Ltd. You may not
-            use our trademark without prior written permission.
+            <span className="font-semibold">Trademarks:</span> “Carees
+            Streesman” is a registered trademark of Carees Streesman
+            Technologies Pvt. Ltd. You may not use our trademark without prior
+            written permission.
           </li>
           <li>
             <span className="font-semibold">Content:</span> All content provided
@@ -135,19 +172,19 @@ export default function CookiePolicy() {
           9. Liability and Disclaimers
         </h2>
         <p className="mb-4">
-          Carees Streesman is not liable for any indirect, incidental, or consequential
-          damages arising out of your use of our services. Our services are
-          provided on an “as is” and “as available” basis.
+          Carees Streesman is not liable for any indirect, incidental, or
+          consequential damages arising out of your use of our services. Our
+          services are provided on an “as is” and “as available” basis.
         </p>
 
         <h2 className="text-lg font-semibold mt-6 mb-2">
           10. Modification of Terms
         </h2>
         <p className="mb-4">
-          Carees Streesman reserves the right to update or modify these Terms at any
-          time. Any changes will be effective immediately upon posting on our
-          website. Your continued use of our services after any modifications
-          indicates your acceptance of the new Terms.
+          Carees Streesman reserves the right to update or modify these Terms at
+          any time. Any changes will be effective immediately upon posting on
+          our website. Your continued use of our services after any
+          modifications indicates your acceptance of the new Terms.
         </p>
 
         <h2 className="text-lg font-semibold mt-6 mb-2">
@@ -159,15 +196,16 @@ export default function CookiePolicy() {
         </p>
         <ul className="list-disc list-inside mb-4 ps-7">
           <li>
-            <span className="font-semibold">Email:</span> support@careerstreesman.com
+            <span className="font-semibold">Email:</span>{" "}
+            support@careerstreesman.com
           </li>
           <li>
             <span className="font-semibold">Phone:</span> +91 8095000123
           </li>
           <li>
-            <span className="font-semibold">Address:</span> Career Streesman office – 4th
-            & 5th Floor, CPR Tower, above Reliance Fresh, Vysya Bank Colony,
-            Stage 2, BTM Layout, Bengaluru, Karnataka 560076
+            <span className="font-semibold">Address:</span> Career Streesman
+            office – 4th & 5th Floor, CPR Tower, above Reliance Fresh, Vysya
+            Bank Colony, Stage 2, BTM Layout, Bengaluru, Karnataka 560076
           </li>
         </ul>
       </div>
